@@ -155,7 +155,7 @@ hr {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #CC8932;
+	background-color: #f8980e;
 	background-image: linear-gradient(to right, #f8980e 0%, #CC8932 100%);
 	padding: 14px 34px;
 	letter-spacing: 1px;
@@ -169,7 +169,7 @@ hr {
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #fff;
 	background-image: none;
-	background-color: #CC8932;
+	background-color: #f8980e;
 }
 .btn:active, .btn.active {
 	background-image: none;
@@ -186,8 +186,9 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/header.jpg) center center no-repeat;
-	background-color: #e5e5e5;
+	background: url(../img/backgrounds/ebook7.png) center center no-repeat;
+	background-position: center bottom;
+	background-color: #CC8932;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -286,29 +287,28 @@ header .intro-text {
 	line-height: 24px;
 	margin: 30px 0;
 }
-/* Services Section */
-#services {
+/* Sponsors Section */
+#sponsors {
 	padding: 100px 0;
-	background: linear-gradient(to right, #f8980e 0%, #CC8932 100%);
-	color: #fff;
+	/*background: linear-gradient(to right, #f8980e 0%, #CC8932 100%);*/
+	background-color: #f6f6f6;
 }
-#services .service-desc {
+#sponsors .sponsor-desc {
 	margin: 10px 10px 20px;
 }
-#services h2 {
-	color: #fff;
+#sponsors h2 {
 }
-#services .section-title h2::after {
+
+#about h2::after {
 	position: absolute;
 	content: "";
-	background: rgba(255,255,255,.3);
+	background: linear-gradient(to right, #f8980e 0%, #CC8932 100%);
 	height: 4px;
 	width: 60px;
 	bottom: 0;
-	margin-left: -30px;
-	left: 50%;
+	left: 0;
 }
-#services i.fa {
+#sponsors i.fa {
 	font-size: 42px;
 	width: 120px;
 	height: 120px;
@@ -318,15 +318,13 @@ header .intro-text {
 	color: #fff;
 	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
 }
-#services h3 {
+#sponsors h3 {
 	font-weight: 500;
 	padding: 5px 0;
-	color: #fff;
 }
-#services p {
-	color: rgba(255,255,255,.75);
+#sponsors p {
 }
-#services .service-desc {
+#sponsors .sponsor-desc {
 	margin-bottom: 40px;
 }
 /* Portfolio Section */
