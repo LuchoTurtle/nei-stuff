@@ -1,446 +1,707 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fall Stack</title>
-<meta name="description" content="">
-<meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fall Stack</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- Favicons
-    ================================================== -->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <!-- Schedule-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/schedule/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/schedule/schedule_style.css"> <!-- Resource style -->
 
-<!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <!-- Favicons
+        ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
-<!-- Stylesheet
-    ================================================== -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
-<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!-- Stylesheet
+        ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation
     ==========================================-->
 <nav id="menu" class="navbar navbar-default navbar-fixed-top">
-  <div class="container"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand page-scroll" href="#page-top" style="padding: 0 !important;">
-        <img src="img/FallPNG.png" width="150" height="50" class="d-inline-block align-top" alt="">
-      </a>
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+            <a class="navbar-brand page-scroll" href="#page-top" style="padding: 0 !important;">
+                <img src="img/FallPNG.png" width="150" height="50" class="d-inline-block align-top" alt="">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#features" class="page-scroll">Evento</a></li>
+                <li><a href="#about" class="page-scroll">Sobre nós</a></li>
+                <li><a href="#sponsors" class="page-scroll">Sponsors</a></li>
+                <li><a href="#portfolio" class="page-scroll">Gallery</a></li>
+                <li><a href="#schedule" class="page-scroll">Schedule</a></li>
+                <li><a href="#testimonials" class="page-scroll">Testimonials</a></li>
+                <li><a href="#speakers" class="page-scroll">Speakers</a></li>
+                <li><a href="#contact" class="page-scroll">Contact</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
-    
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#features" class="page-scroll">Evento</a></li>
-        <li><a href="#about" class="page-scroll">Sobre nós</a></li>
-        <li><a href="#sponsors" class="page-scroll">Sponsors</a></li>
-        <li><a href="#portfolio" class="page-scroll">Gallery</a></li>
-        <li><a href="#testimonials" class="page-scroll">Testimonials</a></li>
-        <li><a href="#speakers" class="page-scroll">Speakers</a></li>
-        <li><a href="#contact" class="page-scroll">Contact</a></li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
 </nav>
 <!-- Header -->
 <header id="header">
-  <div class="intro">
-    <div class="overlay">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 intro-text">
-            <h3 style="color: white">7 de Dezembro de 2018</h3>
-            <h1>Fall Stack<span></span></h1>
-            <p>INSTITUTO SUPERIOR DE ENGENHARIA DO PORTO</p>
-            <a href="#features" class="btn btn-custom btn-lg page-scroll">Sabe mais</a> </div>
+    <div class="intro">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 intro-text">
+                        <h3 style="color: white">7 de Dezembro de 2018</h3>
+                        <h1>Fall Stack<span></span></h1>
+                        <p>INSTITUTO SUPERIOR DE ENGENHARIA DO PORTO</p>
+                        <a href="#features" class="btn btn-custom btn-lg page-scroll">Sabe mais</a></div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </header>
 <!-- Features Section -->
 <div id="features" class="text-center">
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1 section-title">
-      <h2>Evento</h2>
+    <div class="container">
+        <div class="col-md-10 col-md-offset-1 section-title">
+            <h2>Evento</h2>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-3"><i class="fa fa-comments-o"></i>
+                <h3>Workshops</h3>
+                <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque
+                    etiam.</p>
+            </div>
+            <div class="col-xs-6 col-md-3"><i class="fa fa-bullhorn"></i>
+                <h3>Palestras</h3>
+                <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</p>
+            </div>
+            <div class="col-xs-6 col-md-3"><i class="fa fa-group"></i>
+                <h3>Speed Dating</h3>
+                <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque
+                    etiam.</p>
+            </div>
+            <div class="col-xs-6 col-md-3"><i class="fa fa-coffee"></i>
+                <h3>Coffee Breaks</h3>
+                <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-xs-6 col-md-3"> <i class="fa fa-comments-o"></i>
-        <h3>Workshops</h3>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
-      </div>
-      <div class="col-xs-6 col-md-3"> <i class="fa fa-bullhorn"></i>
-        <h3>Palestras</h3>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</p>
-      </div>
-      <div class="col-xs-6 col-md-3"> <i class="fa fa-group"></i>
-        <h3>Speed Dating</h3>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
-      </div>
-      <div class="col-xs-6 col-md-3"> <i class="fa fa-coffee"></i>
-        <h3>Coffee Breaks</h3>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
-      </div>
-    </div>
-  </div>
 </div>
 <!-- About Section -->
 <div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-6"> <img src="img/symbol-transparent.png" class="img-responsive" alt=""> </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="about-text">
-          <h2>Sobre nós</h2>
-          <p>O NEI-ISEP (Núcleo de Estudantes de Informática do Instituto Superior de Engenharia do Porto) é um Núcleo criado por Estudantes de Engenharia Informática que pretende enriquecer a experiência dos diversos estudantes do ISEP durante a sua permanência no instituto a vários níveis relacionados com a nossa área de intervenção - Informática, as TIC e Novas Tecnologias.</p>
-          <p>O NEI-ISEP pretende cultivar um espírito de comunidade e entreajuda, bem como estabelecer ligações com o mercado empresarial, além de proporcionar experiências que permitam enriquecer diversas competências associadas à nossa área de intervenção.</p>
-          <p>É objectivo do NEI-ISEP ser um órgão que pretende apoiar e representar os estudantes de Engenharia Informática do ISEP.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6"><img src="img/symbol-transparent.png" class="img-responsive" alt=""></div>
+            <div class="col-xs-12 col-md-6">
+                <div class="about-text">
+                    <h2>Sobre nós</h2>
+                    <p>O NEI-ISEP (Núcleo de Estudantes de Informática do Instituto Superior de Engenharia do Porto) é
+                        um Núcleo criado por Estudantes de Engenharia Informática que pretende enriquecer a experiência
+                        dos diversos estudantes do ISEP durante a sua permanência no instituto a vários níveis
+                        relacionados com a nossa área de intervenção - Informática, as TIC e Novas Tecnologias.</p>
+                    <p>O NEI-ISEP pretende cultivar um espírito de comunidade e entreajuda, bem como estabelecer
+                        ligações com o mercado empresarial, além de proporcionar experiências que permitam enriquecer
+                        diversas competências associadas à nossa área de intervenção.</p>
+                    <p>É objectivo do NEI-ISEP ser um órgão que pretende apoiar e representar os estudantes de
+                        Engenharia Informática do ISEP.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
 <!-- Sponsors Section -->
 <div id="sponsors" class="text-center">
-  <div class="container">
-    <div class="section-title">
-      <h2>Our Sponsors</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Sponsors</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4"><img src="https://blip.pt/content/themes/ppb/assets/images/blip-logo.svg">
+                <div class="sponsor-desc">
+                </div>
+            </div>
+            <div class="col-md-4"><i class="fa fa-cart-arrow-down"></i>
+                <div class="sponsor-desc">
+                    <h3>Consectetur adipiscing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam
+                        sedasd commodo nibh ante facilisis bibendum dolor feugiat at. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="col-md-4"><i class="fa fa-cloud-download"></i>
+                <div class="sponsor-desc">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam
+                        sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"><i class="fa fa-language"></i>
+                <div class="sponsor-desc">
+                    <h3>Consectetur adipiscing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam
+                        sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+                </div>
+            </div>
+            <div class="col-md-4"><i class="fa fa-plane"></i>
+                <div class="sponsor-desc">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam
+                        sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+                </div>
+            </div>
+            <div class="col-md-4"><i class="fa fa-pie-chart"></i>
+                <div class="sponsor-desc">
+                    <h3>Consectetur adipiscing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam
+                        sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-md-4"> <img src="https://blip.pt/content/themes/ppb/assets/images/blip-logo.svg">
-        <div class="sponsor-desc">
-        </div>
-      </div>
-      <div class="col-md-4"> <i class="fa fa-cart-arrow-down"></i>
-        <div class="sponsor-desc">
-          <h3>Consectetur adipiscing</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      <div class="col-md-4"> <i class="fa fa-cloud-download"></i>
-        <div class="sponsor-desc">
-          <h3>Lorem ipsum dolor</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4"> <i class="fa fa-language"></i>
-        <div class="sponsor-desc">
-          <h3>Consectetur adipiscing</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-        </div>
-      </div>
-      <div class="col-md-4"> <i class="fa fa-plane"></i>
-        <div class="sponsor-desc">
-          <h3>Lorem ipsum dolor</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-        </div>
-      </div>
-      <div class="col-md-4"> <i class="fa fa-pie-chart"></i>
-        <div class="sponsor-desc">
-          <h3>Consectetur adipiscing</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 <!-- Gallery Section -->
 <div id="portfolio" class="text-center">
-  <div class="container">
-    <div class="section-title">
-      <h2>Gallery</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+    <div class="container">
+        <div class="section-title">
+            <h2>Gallery</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+        </div>
+        <div class="row">
+            <div class="portfolio-items">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"><a href="img/portfolio/01-large.jpg" title="Project Title"
+                                                 data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Lorem Ipsum</h4>
+                            </div>
+                            <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"><a href="img/portfolio/02-large.jpg" title="Project Title"
+                                                 data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Adipiscing Elit</h4>
+                            </div>
+                            <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"><a href="img/portfolio/03-large.jpg" title="Project Title"
+                                                 data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Lorem Ipsum</h4>
+                            </div>
+                            <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"><a href="img/portfolio/04-large.jpg" title="Project Title"
+                                                 data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Lorem Ipsum</h4>
+                            </div>
+                            <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title"> </a></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"><a href="img/portfolio/05-large.jpg" title="Project Title"
+                                                 data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Adipiscing Elit</h4>
+                            </div>
+                            <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"><a href="img/portfolio/06-large.jpg" title="Project Title"
+                                                 data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Dolor Sit</h4>
+                            </div>
+                            <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"><a href="img/portfolio/07-large.jpg" title="Project Title"
+                                                 data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Dolor Sit</h4>
+                            </div>
+                            <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"><a href="img/portfolio/08-large.jpg" title="Project Title"
+                                                 data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Lorem Ipsum</h4>
+                            </div>
+                            <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"><a href="img/portfolio/09-large.jpg" title="Project Title"
+                                                 data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Adipiscing Elit</h4>
+                            </div>
+                            <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Project Title"> </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="portfolio-items">
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Lorem Ipsum</h4>
-              </div>
-              <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Adipiscing Elit</h4>
-              </div>
-              <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Lorem Ipsum</h4>
-              </div>
-              <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Lorem Ipsum</h4>
-              </div>
-              <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Adipiscing Elit</h4>
-              </div>
-              <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Dolor Sit</h4>
-              </div>
-              <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Dolor Sit</h4>
-              </div>
-              <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Lorem Ipsum</h4>
-              </div>
-              <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Adipiscing Elit</h4>
-              </div>
-              <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
+
+<!-- Schedule Section -->
+<div id="schedule">
+    <div class="cd-schedule loading">
+        <div class="timeline">
+            <ul>
+                <li><span>09:00</span></li>
+                <li><span>09:30</span></li>
+                <li><span>10:00</span></li>
+                <li><span>10:30</span></li>
+                <li><span>11:00</span></li>
+                <li><span>11:30</span></li>
+                <li><span>12:00</span></li>
+                <li><span>12:30</span></li>
+                <li><span>13:00</span></li>
+                <li><span>13:30</span></li>
+                <li><span>14:00</span></li>
+                <li><span>14:30</span></li>
+                <li><span>15:00</span></li>
+                <li><span>15:30</span></li>
+                <li><span>16:00</span></li>
+                <li><span>16:30</span></li>
+                <li><span>17:00</span></li>
+                <li><span>17:30</span></li>
+                <li><span>18:00</span></li>
+            </ul>
+        </div> <!-- .timeline -->
+
+        <div class="events">
+            <ul>
+                <li class="events-group">
+                    <div class="top-info"><span>Monday</span></div>
+
+                    <ul>
+                        <li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit"
+                            data-event="event-1">
+                            <a href="#0">
+                                <em class="event-name">Abs Circuit</em>
+                            </a>
+                        </li>
+
+                        <li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout"
+                            data-event="event-2">
+                            <a href="#0">
+                                <em class="event-name">Rowing Workout</em>
+                            </a>
+                        </li>
+
+                        <li class="single-event" data-start="14:00" data-end="15:15" data-content="event-yoga-1"
+                            data-event="event-3">
+                            <a href="#0">
+                                <em class="event-name">Yoga Level 1</em>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="events-group">
+                    <div class="top-info"><span>Tuesday</span></div>
+
+                    <ul>
+                        <li class="single-event" data-start="10:00" data-end="11:00" data-content="event-rowing-workout"
+                            data-event="event-2">
+                            <a href="#0">
+                                <em class="event-name">Rowing Workout</em>
+                            </a>
+                        </li>
+
+                        <li class="single-event" data-start="11:30" data-end="13:00"
+                            data-content="event-restorative-yoga" data-event="event-4">
+                            <a href="#0">
+                                <em class="event-name">Restorative Yoga</em>
+                            </a>
+                        </li>
+
+                        <li class="single-event" data-start="13:30" data-end="15:00" data-content="event-abs-circuit"
+                            data-event="event-1">
+                            <a href="#0">
+                                <em class="event-name">Abs Circuit</em>
+                            </a>
+                        </li>
+
+                        <li class="single-event" data-start="15:45" data-end="16:45" data-content="event-yoga-1"
+                            data-event="event-3">
+                            <a href="#0">
+                                <em class="event-name">Yoga Level 1</em>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="events-group">
+                    <div class="top-info"><span>Wednesday</span></div>
+
+                    <ul>
+                        <li class="single-event" data-start="09:00" data-end="10:15"
+                            data-content="event-restorative-yoga" data-event="event-4">
+                            <a href="#0">
+                                <em class="event-name">Restorative Yoga</em>
+                            </a>
+                        </li>
+
+                        <li class="single-event" data-start="10:45" data-end="11:45" data-content="event-yoga-1"
+                            data-event="event-3">
+                            <a href="#0">
+                                <em class="event-name">Yoga Level 1</em>
+                            </a>
+                        </li>
+
+                        <li class="single-event" data-start="12:00" data-end="13:45" data-content="event-rowing-workout"
+                            data-event="event-2">
+                            <a href="#0">
+                                <em class="event-name">Rowing Workout</em>
+                            </a>
+                        </li>
+
+                        <li class="single-event" data-start="13:45" data-end="15:00" data-content="event-yoga-1"
+                            data-event="event-3">
+                            <a href="#0">
+                                <em class="event-name">Yoga Level 1</em>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="events-group">
+                    <div class="top-info"><span>Thursday</span></div>
+
+                    <ul>
+                        <li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit"
+                            data-event="event-1">
+                            <a href="#0">
+                                <em class="event-name">Abs Circuit</em>
+                            </a>
+                        </li>
+
+                        <li class="single-event" data-start="12:00" data-end="13:45"
+                            data-content="event-restorative-yoga" data-event="event-4">
+                            <a href="#0">
+                                <em class="event-name">Restorative Yoga</em>
+                            </a>
+                        </li>
+
+                        <li class="single-event" data-start="15:30" data-end="16:30" data-content="event-abs-circuit"
+                            data-event="event-1">
+                            <a href="#0">
+                                <em class="event-name">Abs Circuit</em>
+                            </a>
+                        </li>
+
+                        <li class="single-event" data-start="17:00" data-end="18:30" data-content="event-rowing-workout"
+                            data-event="event-2">
+                            <a href="#0">
+                                <em class="event-name">Rowing Workout</em>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="events-group">
+                    <div class="top-info"><span>Friday</span></div>
+
+                    <ul>
+                        <li class="single-event" data-start="10:00" data-end="11:00" data-content="event-rowing-workout"
+                            data-event="event-2">
+                            <a href="#0">
+                                <em class="event-name">Rowing Workout</em>
+                            </a>
+                        </li>
+
+                        <li class="single-event" data-start="12:30" data-end="14:00" data-content="event-abs-circuit"
+                            data-event="event-1">
+                            <a href="#0">
+                                <em class="event-name">Abs Circuit</em>
+                            </a>
+                        </li>
+
+                        <li class="single-event" data-start="15:45" data-end="16:45" data-content="event-yoga-1"
+                            data-event="event-3">
+                            <a href="#0">
+                                <em class="event-name">Yoga Level 1</em>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="event-modal">
+            <header class="header">
+                <div class="content">
+                    <span class="event-date"></span>
+                    <h3 class="event-name"></h3>
+                </div>
+
+                <div class="header-bg"></div>
+            </header>
+
+            <div class="body">
+                <div class="event-info"></div>
+                <div class="body-bg"></div>
+            </div>
+
+            <a href="#0" class="close">Close</a>
+        </div>
+
+        <div class="cover-layer"></div>
+    </div>
+</div>
+
 <!-- Testimonials Section -->
 <div id="testimonials">
-  <div class="container">
-    <div class="section-title text-center">
-      <h2>What our clients say</h2>
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>What our clients say</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <div class="testimonial-image"><img src="img/testimonials/01.jpg" alt=""></div>
+                    <div class="testimonial-content">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
+                            diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
+                        <div class="testimonial-meta"> - John Doe</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <div class="testimonial-image"><img src="img/testimonials/02.jpg" alt=""></div>
+                    <div class="testimonial-content">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
+                            diam sedasd commodo nibh ante facilisis."</p>
+                        <div class="testimonial-meta"> - Johnathan Doe</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <div class="testimonial-image"><img src="img/testimonials/03.jpg" alt=""></div>
+                    <div class="testimonial-content">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
+                            diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
+                        <div class="testimonial-meta"> - John Doe</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <div class="testimonial-image"><img src="img/testimonials/04.jpg" alt=""></div>
+                    <div class="testimonial-content">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
+                            diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
+                        <div class="testimonial-meta"> - Johnathan Doe</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <div class="testimonial-image"><img src="img/testimonials/05.jpg" alt=""></div>
+                    <div class="testimonial-content">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
+                            diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
+                        <div class="testimonial-meta"> - John Doe</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <div class="testimonial-image"><img src="img/testimonials/06.jpg" alt=""></div>
+                    <div class="testimonial-content">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare
+                            diam sedasd commodo nibh ante facilisis."</p>
+                        <div class="testimonial-meta"> - Johnathan Doe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"> <img src="img/testimonials/01.jpg" alt=""> </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
-            <div class="testimonial-meta"> - John Doe </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"> <img src="img/testimonials/02.jpg" alt=""> </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis."</p>
-            <div class="testimonial-meta"> - Johnathan Doe </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"> <img src="img/testimonials/03.jpg" alt=""> </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
-            <div class="testimonial-meta"> - John Doe </div>
-          </div>
-        </div>
-      </div>
-      <div class="row"> </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"> <img src="img/testimonials/04.jpg" alt=""> </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
-            <div class="testimonial-meta"> - Johnathan Doe </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"> <img src="img/testimonials/05.jpg" alt=""> </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
-            <div class="testimonial-meta"> - John Doe </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"> <img src="img/testimonials/06.jpg" alt=""> </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis."</p>
-            <div class="testimonial-meta"> - Johnathan Doe </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 <!-- Speakers Section -->
 <div id="speakers" class="text-center">
-  <div class="container">
-    <div class="col-md-8 col-md-offset-2 section-title">
-      <h2>Meet the Speakers</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2 section-title">
+            <h2>Meet the Speakers</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+        </div>
+        <div id="row">
+            <div class="col-md-3 col-sm-6 speakers">
+                <div class="thumbnail"><img src="img/speakers/01.jpg" alt="..." class="speakers-img">
+                    <div class="caption">
+                        <h4>John Doe</h4>
+                        <p>Director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 speakers">
+                <div class="thumbnail"><img src="img/speakers/02.jpg" alt="..." class="speakers-img">
+                    <div class="caption">
+                        <h4>Mike Doe</h4>
+                        <p>Senior Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 speakers">
+                <div class="thumbnail"><img src="img/speakers/03.jpg" alt="..." class="speakers-img">
+                    <div class="caption">
+                        <h4>Jane Doe</h4>
+                        <p>Senior Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 speakers">
+                <div class="thumbnail"><img src="img/speakers/04.jpg" alt="..." class="speakers-img">
+                    <div class="caption">
+                        <h4>Karen Doe</h4>
+                        <p>Project Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="row">
-      <div class="col-md-3 col-sm-6 speakers">
-        <div class="thumbnail"> <img src="img/speakers/01.jpg" alt="..." class="speakers-img">
-          <div class="caption">
-            <h4>John Doe</h4>
-            <p>Director</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 speakers">
-        <div class="thumbnail"> <img src="img/speakers/02.jpg" alt="..." class="speakers-img">
-          <div class="caption">
-            <h4>Mike Doe</h4>
-            <p>Senior Designer</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 speakers">
-        <div class="thumbnail"> <img src="img/speakers/03.jpg" alt="..." class="speakers-img">
-          <div class="caption">
-            <h4>Jane Doe</h4>
-            <p>Senior Designer</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 speakers">
-        <div class="thumbnail"> <img src="img/speakers/04.jpg" alt="..." class="speakers-img">
-          <div class="caption">
-            <h4>Karen Doe</h4>
-            <p>Project Manager</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 <!-- Contact Section -->
 <div id="contact">
-  <div class="container">
-    <div class="col-md-8">
-      <div class="row">
-        <div class="section-title">
-          <h2>Get In Touch</h2>
-          <p>Please fill out the form below to send us an email and we will get back to you as soon as possible.</p>
-        </div>
-        <form name="sentMessage" id="contactForm" novalidate>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-                <p class="help-block text-danger"></p>
-              </div>
+    <div class="container">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="section-title">
+                    <h2>Get In Touch</h2>
+                    <p>Please fill out the form below to send us an email and we will get back to you as soon as
+                        possible.</p>
+                </div>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" placeholder="Name"
+                                       required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control" placeholder="Email"
+                                       required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message"
+                                  required></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div id="success"></div>
+                    <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
+                </form>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-            <p class="help-block text-danger"></p>
-          </div>
-          <div id="success"></div>
-          <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
-        </form>
-      </div>
-    </div>
-    <div class="col-md-3 col-md-offset-1 contact-info">
-      <div class="contact-item">
-        <h3>Contact Info</h3>
-        <p><span><i class="fa fa-map-marker"></i> Address</span>4321 California St,<br>
-          San Francisco, CA 12345</p>
-      </div>
-      <div class="contact-item">
-        <p><span><i class="fa fa-phone"></i> Phone</span> +1 123 456 1234</p>
-      </div>
-      <div class="contact-item">
-        <p><span><i class="fa fa-envelope-o"></i> Email</span> info@company.com</p>
-      </div>
-    </div>
-    <div class="col-md-12">
-      <div class="row">
-        <div class="social">
-          <ul>
-            <li><a href="https://www.facebook.com/nei.isep"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/nei_isep"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/nei-isep"><i class="fa fa-linkedin-square"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UCPFWp4B34GoqxMaPbS7Xsjg"><i class="fa fa-youtube"></i></a></li>
-          </ul>
         </div>
-      </div>
+        <div class="col-md-3 col-md-offset-1 contact-info">
+            <div class="contact-item">
+                <h3>Contact Info</h3>
+                <p><span><i class="fa fa-map-marker"></i> Address</span>4321 California St,<br>
+                    San Francisco, CA 12345</p>
+            </div>
+            <div class="contact-item">
+                <p><span><i class="fa fa-phone"></i> Phone</span> +1 123 456 1234</p>
+            </div>
+            <div class="contact-item">
+                <p><span><i class="fa fa-envelope-o"></i> Email</span> info@company.com</p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/nei.isep"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/nei_isep"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/nei-isep"><i
+                                class="fa fa-linkedin-square"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCPFWp4B34GoqxMaPbS7Xsjg"><i
+                                class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 <!-- Footer Section -->
 <div id="footer">
-  <div class="container text-center">
-    <p>&copy; 2017 Interact. Design by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
-  </div>
+    <div class="container text-center">
+        <p>&copy; 2017 Interact. Design by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
+    </div>
 </div>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/nivo-lightbox.js"></script>
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
+<!--Schedule-->
+<script src="js/modernizr.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+    if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/schedule_main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>
