@@ -105,6 +105,7 @@ hr {
 #menu.navbar-default .navbar-nav > li > a:hover:after {
 	width: 100%;
 }
+
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	background-color: transparent;
 }
@@ -219,7 +220,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-bottom: 60px;
 }
 header .intro-text {
-	padding-top: 350px;
+	padding-top: 300px;
 	padding-bottom: 200px;
 	text-align: center;
 }
@@ -253,15 +254,7 @@ header .intro-text {
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 }
-#about h2::after {
-	position: absolute;
-	content: "";
-	background: linear-gradient(to right, #f8980e 0%, #CC8932 100%);
-	height: 4px;
-	width: 60px;
-	bottom: 0;
-	left: 0;
-}
+
 #about .about-text li {
 	margin-bottom: 6px;
 	margin-left: 6px;
@@ -281,7 +274,6 @@ header .intro-text {
 	margin-top: 10px;
 	background: #fff;
 	border-right: 0;
-	box-shadow: 0 0 50px rgba(0,0,0,0.06);
 }
 #about p {
 	line-height: 24px;
@@ -299,15 +291,6 @@ header .intro-text {
 #sponsors h2 {
 }
 
-#about h2::after {
-	position: absolute;
-	content: "";
-	background: linear-gradient(to right, #f8980e 0%, #CC8932 100%);
-	height: 4px;
-	width: 60px;
-	bottom: 0;
-	left: 0;
-}
 #sponsors i.fa {
 	font-size: 42px;
 	width: 120px;
@@ -373,43 +356,9 @@ header .intro-text {
 	opacity: 1;
 }
 /* Testimonials Section */
-#testimonials {
+#schedule {
 	padding: 100px 0;
-	background: #f6f6f6;
-}
-#testimonials i {
-	color: #e6e6e6;
-	font-size: 32px;
-	margin-bottom: 20px;
-}
-.testimonial {
-	position: relative;
-	padding: 20px;
-}
-.testimonial-image {
-	float: left;
-	margin-right: 15px;
-}
-.testimonial-image, .testimonial-image img {
-	display: block;
-	width: 64px;
-	height: 64px;
-	border-radius: 50%;
-}
-.testimonial-content {
-	position: relative;
-	overflow: hidden;
-}
-.testimonial-content p {
-	margin-bottom: 0;
-	font-size: 14px;
-	font-style: italic;
-}
-.testimonial-meta {
-	margin-top: 10px;
-	font-size: 15px;
-	font-weight: 600;
-	color: #666;
+	background: white;
 }
 /* Team Section */
 #speakers {
