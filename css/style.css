@@ -161,7 +161,9 @@ hr {
 	margin-top: 10px;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
+	font-size:18px;
 }
+
 .subsection-title h2::after {
 	position: absolute;
 	content: "";
@@ -172,6 +174,7 @@ hr {
 	margin-left: -30px;
 	left: 50%;
 }
+
 .subsection-title p {
 	font-size: 14px;
 }
