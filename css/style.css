@@ -152,6 +152,29 @@ hr {
 .section-title p {
 	font-size: 18px;
 }
+
+.subsection-title {
+	margin-bottom: 70px;
+}
+.subsection-title h2 {
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+.subsection-title h2::after {
+	position: absolute;
+	content: "";
+	background: linear-gradient(to right, #f8980e 0%, #CC8932 100%);
+	height: 4px;
+	width: 60px;
+	bottom: 0;
+	margin-left: -30px;
+	left: 50%;
+}
+.subsection-title p {
+	font-size: 14px;
+}
 .btn-custom {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
@@ -167,6 +190,22 @@ hr {
 	transition: all 0.5s linear;
 	border: 0;
 }
+.btn-custom {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #f8980e;
+	background-image: linear-gradient(to right, #f8980e 0%, #CC8932 100%);
+	padding: 14px 34px;
+	letter-spacing: 1px;
+	margin: 0;
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 25px;
+	transition: all 0.5s linear;
+	border: 0;
+}
+
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #fff;
 	background-image: none;
