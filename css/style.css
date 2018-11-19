@@ -178,21 +178,18 @@ hr {
 #goldplus h2::after {
 	position: absolute;
 	content: "";
-	background: linear-gradient(to right, #EFDE17 0%, #FFEB00 100%);
+	background: linear-gradient(to right, #E9C814 0%, #E9C814 100%);
 	height: 4px;
 	width: 60px;
 	bottom: 0;
 	margin-left: -30px;
 	left: 50%;
-	box-shadow:
-			0 0 5px 3px #EFDE17,  /* inner white */
-			0 0 15px 5px #FFEB00; /* middle magenta */
 }
 
 #gold h2::after {
 	position: absolute;
 	content: "";
-	background: linear-gradient(to right, #EFDE17 0%, #FFEB00 100%);
+	background: linear-gradient(to right, #F7E066 0%, #F7E066 100%);
 	height: 4px;
 	width: 60px;
 	bottom: 0;
@@ -214,7 +211,7 @@ hr {
 #bronze h2::after {
 	position: absolute;
 	content: "";
-	background: linear-gradient(to right, #CD7F32 0%, #DA8836 100%);
+	background: linear-gradient(to right, #FFD6AD 0%, #FFD6AD 100%);
 	height: 4px;
 	width: 60px;
 	bottom: 0;
@@ -225,7 +222,7 @@ hr {
 #friend h2::after {
 	position: absolute;
 	content: "";
-	background: linear-gradient(to right, #CAFFFC 0%, #D3FEFB 100%);
+	background: linear-gradient(to right, #B1DCFB 0%, #B1DCFB 100%);
 	height: 4px;
 	width: 60px;
 	bottom: 0;
