@@ -315,6 +315,15 @@ Main Components
   background: #fba809;
 }
 
+.cd-schedule .single-event[data-event="event-3"],
+.cd-schedule [data-event="event-3"] .header-bg {
+  background: #f98257;
+}
+
+.cd-schedule .single-event[data-event="event-3"]:hover {
+  background: #ffb59b;
+}
+
 .cd-schedule .event-modal {
   position: fixed;
   z-index: 3;
