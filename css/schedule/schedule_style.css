@@ -320,10 +320,6 @@ Main Components
   background: #dcdcdc;
 }
 
-.cd-schedule .single-event[data-event="event-3"]:hover {
-  background: #b8b8b8;
-}
-
 .cd-schedule .event-modal {
   position: fixed;
   z-index: 3;

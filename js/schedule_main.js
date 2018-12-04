@@ -65,14 +65,27 @@ jQuery(document).ready(function($){
 		var self = this;
 
 		this.singleEvents.each(function(){
+
+            var start = $(this).data('start');
+            switch (start) {
+				case '17:10':
+					start = '17:15';
+					break;
+			}
+
+            var end = $(this).data('end');
+            if(end === '19:00') {
+                end = '18:30';
+            }
+
 			//create the .event-date element for each event
-			var durationLabel = '<span class="event-date">'+$(this).data('start')+' - '+$(this).data('end')+'</span>';
+			var durationLabel = '<span class="event-date">'+start+' - '+end+'</span>';
 			$(this).children('a').prepend($(durationLabel));
 
 			//detect click on the event and open the modal
-			$(this).on('click', 'a', function(event){
+			$(this).on('click', 'a', function (event) {
 				event.preventDefault();
-				if( !self.animating ) self.openModal($(this));
+				if (!self.animating) self.openModal($(this));
 			});
 		});
 
@@ -81,6 +94,7 @@ jQuery(document).ready(function($){
 			event.preventDefault();
 			if( !self.animating ) self.closeModal(self.eventsGroup.find('.selected-event'));
 		});
+
 		this.element.on('click', '.cover-layer', function(event){
 			if( !self.animating && self.element.hasClass('modal-is-open') ) self.closeModal(self.eventsGroup.find('.selected-event'));
 		});
