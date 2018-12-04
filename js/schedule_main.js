@@ -137,7 +137,7 @@ jQuery(document).ready(function($){
 			var eventTop = event.offset().top - $(window).scrollTop(),
 				eventLeft = event.offset().left,
 				eventHeight = event.innerHeight(),
-				eventWidth = event.innerWidth();
+				eventWidth = event.innerWidth()*0.3;
 
 			var windowWidth = $(window).width(),
 				windowHeight = $(window).height();
@@ -162,7 +162,7 @@ jQuery(document).ready(function($){
 
 			//set modalHeader width
 			self.modalHeader.css({
-				width: eventWidth+'px',
+				width: '30%' /*eventWidth+'px',*/
 			});
 			//set modalBody left margin
 			self.modalBody.css({

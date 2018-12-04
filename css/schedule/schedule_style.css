@@ -185,7 +185,7 @@ Main Components
     width: 100%;
   }
   .cd-schedule .events .events-group {
-    width: 50%;
+    width: 100%;
     float: left;
     border: 1px solid #EAEAEA;
     /* reset style */
@@ -242,7 +242,7 @@ Main Components
     max-width: none;
     margin-right: 0;
   }
-  .cd-schedule .events .single-event a {
+  .cd-schedule .events a {
     padding: 1.2em;
   }
   .cd-schedule .events .single-event:last-of-type {
@@ -279,21 +279,21 @@ Main Components
 }
 
 .cd-schedule .event-name {
-  font-size: 2.4rem;
+  font-size: 2vw;
 }
 
 @media only screen and (min-width: 800px) {
   .cd-schedule .event-name {
-    font-size: 2rem;
+    font-size: 1vw;
   }
 }
 
 .cd-schedule .event-date {
   /* they are not included in the the HTML but added using JavScript */
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   opacity: .7;
   line-height: 1.2;
-  margin-bottom: .2em;
+  margin-bottom: .1em;
 }
 
 .cd-schedule .single-event[data-event="event-1"],
@@ -303,7 +303,7 @@ Main Components
 }
 
 .cd-schedule .single-event[data-event="event-1"]:hover {
-  background: #f8980e;
+  background: #ec8d0e;
 }
 
 .cd-schedule .single-event[data-event="event-2"],
@@ -312,16 +312,16 @@ Main Components
 }
 
 .cd-schedule .single-event[data-event="event-2"]:hover {
-  background: #fba809;
+  background: #854841;
 }
 
 .cd-schedule .single-event[data-event="event-3"],
 .cd-schedule [data-event="event-3"] .header-bg {
-  background: #f98257;
+  background: #dcdcdc;
 }
 
 .cd-schedule .single-event[data-event="event-3"]:hover {
-  background: #ffb59b;
+  background: #b8b8b8;
 }
 
 .cd-schedule .event-modal {
