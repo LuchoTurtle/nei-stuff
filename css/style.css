@@ -477,6 +477,7 @@ header .intro-text {
 }
 #speakers .speakers-img {
 	width: 240px;
+	height: 240px !important;
 }
 #speakers .thumbnail {
 	background: transparent;
