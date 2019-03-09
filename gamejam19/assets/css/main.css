@@ -2047,7 +2047,7 @@ input, select, textarea {
 		justify-content: center;
 		position: relative;
 		height: 24em;
-		background: url("../../images/banner.jpg") center center;
+		background: url("../../images/banner.png") center center;
 		background-size: cover;
 		padding: 0;
 	}
@@ -2376,9 +2376,6 @@ input, select, textarea {
 
 	#copyright {
 		text-align: center;
-		padding-top: 6em;
-		margin-top: 6em;
-		border-top: solid 1px rgba(255, 255, 255, 0.05);
 	}
 
 		#copyright ul {
