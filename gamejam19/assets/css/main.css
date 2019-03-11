@@ -1988,13 +1988,13 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #29BBE0 url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #e97770 url("images/overlay.png");
+				background: #29BBE0 url("images/overlay.png");
 				color: #fff;
 			}
 
@@ -2119,9 +2119,11 @@ input, select, textarea {
 		left: 0;
 		width: 100%;
 		text-align: center;
+		color: #ffffff;
 	}
 
 		#nav > ul {
+			background-color: #000000cc;
 			display: inline-block;
 			border-radius: 0.35em;
 			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
@@ -2234,6 +2236,8 @@ input, select, textarea {
 			line-height: 1.35em;
 			padding: 1em 0 1em 0;
 			margin-bottom: 1em;
+			background-image: url("../../images/banner.png");
+			background-size: cover;
 		}
 
 			#intro p.style2 a {
@@ -2909,7 +2913,7 @@ input, select, textarea {
 					font-size: 1.5em;
 					letter-spacing: 0.05em;
 					line-height: 1.25em;
-					padding: 1.25em;
+					padding: 1.25em
 				}
 
 		/* Features */
