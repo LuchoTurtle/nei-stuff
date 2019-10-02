@@ -2726,9 +2726,11 @@ input, select, textarea {
 		}
 
 		#header:before {
+			/*
 			height: calc(100% - 50px);
 			opacity: 0.15;
 			top: 0;
+			*/
 		}
 
 		#header:after {
@@ -2795,7 +2797,7 @@ input, select, textarea {
 
 	#footer {
 		background-attachment: scroll;
-		background-color: #4eb980;
+		background-color: #e86925;
 		background-image: url("images/bottom-3200.svg");
 		background-position: top center;
 		background-repeat: repeat-x;
@@ -2808,7 +2810,7 @@ input, select, textarea {
 			*/
 
 		margin-top: -260px;
-		padding: calc(460px + 6em) 0 10em 0;
+		padding: calc(460px + 6em) 0 2em 0;
 		position: relative;
 		text-align: center;
 	}
