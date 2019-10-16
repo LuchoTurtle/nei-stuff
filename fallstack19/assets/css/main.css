@@ -2725,14 +2725,6 @@ input, select, textarea {
 			z-index: 0;
 		}
 
-		#header:before {
-			/*
-			height: calc(100% - 50px);
-			opacity: 0.15;
-			top: 0;
-			*/
-		}
-
 		#header:after {
 			bottom: 0;
 			height: 50px;
@@ -3028,10 +3020,6 @@ input, select, textarea {
 				padding: 6em 0 12em 0;
 			}
 
-				#header:before {
-					height: calc(100% - 25px);
-				}
-
 				#header:after {
 					height: 25px;
 				}
@@ -3179,10 +3167,6 @@ input, select, textarea {
 				background-size: 1280px 184px,						auto,							cover;
 				padding: 3em 0 7em 0;
 			}
-
-				#header:before {
-					height: calc(100% - 20px);
-				}
 
 				#header:after {
 					height: 20px;
