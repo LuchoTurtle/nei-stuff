@@ -2173,12 +2173,58 @@ input, select, textarea {
 		position: relative;
 	}
 
+	.contain {
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
+		padding: 5%;
+	}
+
+    .diamond {
+        background-image: url("images/overlay_diamond.png");
+    }
+
+    .diamond::after{
+        background-image: url("images/overlay_diamond.png");
+    }
+
+    .gold {
+        background-image: url("images/overlay_golden.png");
+    }
+
+    .gold::after{
+        background-image: url("images/overlay_golden.png");
+    }
+
+    .silver {
+        background-image: url("images/overlay_silver.png");
+    }
+
+    .silver::after{
+        background-image: url("images/overlay_silver.png");
+    }
+
+    .bronze {
+        background-image: url("images/overlay_bronze.png");
+    }
+
+    .bronze::after{
+        background-image: url("images/overlay_bronze.png");
+    }
+
+    .regular {
+        background-image: url("images/overlay.png");
+    }
+
+    .regular::after {
+        background-image: url("images/overlay.png");
+    }
+
 		.image:after {
 			-moz-transition: opacity 0.25s ease-in-out;
 			-webkit-transition: opacity 0.25s ease-in-out;
 			-ms-transition: opacity 0.25s ease-in-out;
 			transition: opacity 0.25s ease-in-out;
-			background-image: url("images/overlay.png");
 			content: '';
 			display: block;
 			height: 100%;
