@@ -183,6 +183,11 @@ input, select, textarea {
 		padding: 1em 0 1em 2em;
 	}
 
+	.sponsor_title {
+		font-size: 70px; text-align: center;
+	}
+
+
 /* Container */
 
 	.container {
@@ -3255,7 +3260,13 @@ input, select, textarea {
 
 	}
 
-/* Mobile (Portrait) */
+	@media screen and (max-width: 425px) {
+		.sponsor_title {
+			font-size: 45px; text-align: center;
+		}
+	}
+
+	/* Mobile (Portrait) */
 
 	@media screen and (max-width: 480px) {
 
