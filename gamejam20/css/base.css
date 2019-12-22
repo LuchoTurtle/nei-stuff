@@ -241,7 +241,7 @@ canvas {
 .content__inner-item--date {
 	display: block;
 	margin: 0 0 1.5rem;
-	font-size: 2rem;
+	font-size: 4rem;
 }
 
 .content__inner-item:nth-child(3n-1) {
