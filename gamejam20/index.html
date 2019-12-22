@@ -15,7 +15,9 @@ Made following the article from Yuriy Artyukh on CodDrops. All credits go to him
 		<link rel="stylesheet" href="https://use.typekit.net/ldt4auk.css">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-		<script src="src/lib/blotter.js"></script>
+		<script src="src/lib/blotter/blotter.min.js"></script>
+		<script src="src/lib/blotter/channelSplitMaterial.js"></script>
+		<script src="src/lib/blotter/fliesMaterial.js"></script>
 	</head>
 	<body class="demo-1 loading">
 		<main>
@@ -54,7 +56,7 @@ Made following the article from Yuriy Artyukh on CodDrops. All credits go to him
 				</div>
 				<div class="content__item content__item--details content__item--columns">
 					<div class="content__inner">
-						<span class="content__inner-item content__inner-item--date">detalhes</span>
+						<div id="flies-detail-header" class="content__inner-item content__inner-item--date"></div>
 						<span class="content__inner-item">sem tema específico</span><br/>
 						<span class="content__inner-item">38 horas</span><br/>
 						<span class="content__inner-item">coffee breaks</span><br/>
@@ -62,7 +64,7 @@ Made following the article from Yuriy Artyukh on CodDrops. All credits go to him
 						<span class="content__inner-item">local específico para dormir</span><br/>
 					</div>
 					<div class="content__inner">
-						<span class="content__inner-item content__inner-item--date">regras</span>
+						<div id="flies-rules-header" class="content__inner-item content__inner-item--date"></div>
 						<span class="content__inner-item">grupos de 4-5 pessoas</span><br/>
 						<span class="content__inner-item">os grupos devem comparecer no evento</span><br/>
 						<span class="content__inner-item">tolerância de 5 minutos no ato de entrega</span><br/>
@@ -74,6 +76,10 @@ Made following the article from Yuriy Artyukh on CodDrops. All credits go to him
 				</div>
 			</div>
 		</main>
+		<!-- blotter headers -->
+		<script src="src/details_header.js"></script>
+		<script src="src/rules_header.js"></script>
+		<!-- blotter headers -->
 		<script src="js/ico.js"></script>
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/charming.min.js"></script>
