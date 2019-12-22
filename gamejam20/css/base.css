@@ -234,7 +234,7 @@ canvas {
 
 .content__inner-item {
 	display: inline;
-	white-space: nowrap;
+	/*white-space: nowrap;*/
 	font-weight: 700;
 }
 
@@ -342,14 +342,14 @@ canvas {
 		text-align: right;
 	}
 	.frame__demos a {
-		pointer-events: auto;
+		/*pointer-events: auto;*/
 		margin: 0 0 1rem 1rem;
 	}
 	.frame__credits a {
-		pointer-events: auto;
+		/*pointer-events: auto;*/
 	}
 	.frame__links a {
-		pointer-events: auto;
+		/*pointer-events: auto;*/
 		margin: 0 0 0 1rem;
 	}
 	.frame__links a:not(:last-child)::after {
