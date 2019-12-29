@@ -7,9 +7,9 @@ var text = new Blotter.Text("regras", {
 var material = new Blotter.FliesMaterial();
 
 // setting up values for the material
-material.uniforms.uPointCellWidth.value = 0.012;
-material.uniforms.uPointRadius.value = 0.85;
-material.uniforms.uSpeed.value = 2.0;
+material.uniforms.uPointCellWidth.value = 0.011;
+material.uniforms.uPointRadius.value = 1;
+material.uniforms.uSpeed.value = 0.6;
 
 
 var blotter = new Blotter(material, { texts : text });
