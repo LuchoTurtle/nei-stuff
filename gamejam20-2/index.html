@@ -10,9 +10,9 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -25,27 +25,40 @@
 </head>
 <body>
     <nav class="navbar navbar-dark bg-transperent">
-        <a target="_blank" rel="noopener noreferrer" href="http://gamejam2019.nei-isep.org" class="navbar-brand">edição anterior</a>
+        <a target="_blank" rel="noopener noreferrer" href="http://gamejam2019.nei-isep.org" class="navbar-brand" style="text-decoration: underline; pointer-events: auto; cursor: pointer">edição anterior</a>
         <span class="mr-0">Prémios anunciados brevemente!</span>
     </nav>
 
     <div class="container d-flex justify-content-center align-items-center">
         <div class="row">
             <div class="col">
-                <div class="row d-flex justify-content-center" data-aos="fade-in">
+                <div class="row d-flex justify-content-center"
+                     data-aos="fade-in"
+                     data-aos-delay="500"
+                     data-aos-duration="1000"
+                >
                     <div class="col-6">
                         <img src="img/logo.png" class="img-fluid"/>
                     </div>
                 </div>
                 <div class="row mt-5" style="justify-content: space-evenly">
-                    <div class="col-auto text-right" data-aos="slide-right">
-                        <h1>Detalhes</h1>
+                    <div class="col-12 text-right"
+                         data-aos="fade-right"
+                         data-aos-delay="1000"
+                         data-aos-duration="1000"
+                    >
+                        <h1 class="col-title">Detalhes</h1>
                         <span class="content__inner-item">29 Fevereiro - 01 Março</span><br/>
                         <span class="content__inner-item">coffee breaks</span><br/>
+                        <span class="content__inner-item">refeições incluidas</span><br/>
                         <span class="content__inner-item">staff disponível a qualquer hora</span><br/>
                     </div>
-                    <div class="col-auto" data-aos="slide-left">
-                        <h1>Regras</h1>
+                    <div class="col-12"
+                         data-aos="fade-left"
+                         data-aos-delay="1000"
+                         data-aos-duration="1000"
+                    >
+                        <h1 class="col-title">Regras</h1>
                         <span class="content__inner-item">grupos de 2-4 pessoas</span><br/>
                         <span class="content__inner-item">32 horas para desenvolvimento</span><br/>
                         <span class="content__inner-item">código open source</span><br/>
@@ -74,7 +87,7 @@
                 <a>01 Março</a>
             </div>
         </div>
-        <p class="mr-0">A segunda edição<a> da Level-Up GameJam criada pelo NEI regressa. Maior e melhor.</a></p>
+        <span class="mr-0">A segunda edição da <b>Level-Up GameJam</b> criada pelo NEI regressa. Maior e melhor.</span>
     </nav>
 
 
