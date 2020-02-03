@@ -24,8 +24,18 @@ body {
     position: absolute;
 }
 
-.scaleDown {
+.scaleDown1 {
+    max-width:20%;
+    height:auto;
+}
+
+.scaleDown2 {
     max-width:50%;
+    height:auto;
+}
+
+.scaleDown3 {
+    max-width:70%;
     height:auto;
 }
 
