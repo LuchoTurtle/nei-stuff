@@ -1,100 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Level-Up GameJam 2020</title>
-    <meta name="description" content="A segunda edição da Level-Up Game Jam organizada pelo NEI regressa." />
-    <meta name="keywords" content="game jam, jogo, isep, desenvolvimento, coffee break" />
-    <meta name="author" content="NEI-ISEP" />
+    <meta name="description" content="A segunda edição da Level-Up Game Jam organizada pelo NEI regressa."/>
+    <meta name="keywords" content="game jam, jogo, isep, desenvolvimento, coffee break"/>
+    <meta name="author" content="NEI-ISEP"/>
     <link rel="shortcut icon" href="favicon.ico">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-transperent">
-        <a target="_blank" rel="noopener noreferrer" href="http://gamejam2019.nei-isep.org" class="navbar-brand" style="text-decoration: underline; pointer-events: auto; cursor: pointer">edição anterior</a>
-        <span class="mr-0">Prémios anunciados brevemente!</span>
-    </nav>
+<nav class="navbar navbar-dark bg-transperent">
+    <a target="_blank" rel="noopener noreferrer" href="http://gamejam2019.nei-isep.org"
+       class="navbar-brand"
+       style="text-decoration: underline; pointer-events: auto; cursor: pointer; font-size: 0.5rem">edição anterior</a>
 
-    <div class="container d-flex justify-content-center align-items-center">
-        <div class="row">
-            <div class="col">
-                <div class="row d-flex justify-content-center"
-                     data-aos="fade-in"
-                     data-aos-delay="500"
+    <span class="mr-0 mb-4"
+          style="opacity: 0.5">Prémios anunciados brevemente!</span>
+</nav>
+
+<div id="scene">
+    <img src="img/nave1.png" data-depth="0.2" class="scaleDown space1">
+    <img src="img/nave2.png" data-depth="0.5" class="scaleDown space2">
+    <img src="img/nave4.png" data-depth="0.7" class="scaleDown space3">
+</div>
+
+<div class="container d-flex justify-content-center align-items-center">
+    <div class="row">
+        <div class="col">
+            <div class="row d-flex justify-content-center"
+                 data-aos="fade-in"
+                 data-aos-delay="500"
+                 data-aos-duration="1000"
+            >
+                <div class="col-6">
+                    <img src="img/logo.png" class="img-fluid"/>
+                </div>
+            </div>
+            <div class="row mt-5" style="justify-content: space-evenly">
+                <div class="col-12 text-right mb-5"
+                     data-aos="fade-right"
+                     data-aos-delay="1000"
                      data-aos-duration="1000"
                 >
-                    <div class="col-6">
-                        <img src="img/logo.png" class="img-fluid"/>
-                    </div>
+                    <h1 class="col-title">Detalhes</h1>
+                    <span class="content__inner-item">29 Fevereiro - 01 Março</span><br/>
+                    <span class="content__inner-item">coffee breaks</span><br/>
+                    <span class="content__inner-item">refeições incluidas</span><br/>
+                    <span class="content__inner-item">staff disponível a qualquer hora</span><br/>
                 </div>
-                <div class="row mt-5" style="justify-content: space-evenly">
-                    <div class="col-12 text-right"
-                         data-aos="fade-right"
-                         data-aos-delay="1000"
-                         data-aos-duration="1000"
-                    >
-                        <h1 class="col-title">Detalhes</h1>
-                        <span class="content__inner-item">29 Fevereiro - 01 Março</span><br/>
-                        <span class="content__inner-item">coffee breaks</span><br/>
-                        <span class="content__inner-item">refeições incluidas</span><br/>
-                        <span class="content__inner-item">staff disponível a qualquer hora</span><br/>
-                    </div>
-                    <div class="col-12"
-                         data-aos="fade-left"
-                         data-aos-delay="1000"
-                         data-aos-duration="1000"
-                    >
-                        <h1 class="col-title">Regras</h1>
-                        <span class="content__inner-item">grupos de 2-4 pessoas</span><br/>
-                        <span class="content__inner-item">32 horas para desenvolvimento</span><br/>
-                        <span class="content__inner-item">código open source</span><br/>
-                        <span class="content__inner-item">inscrição
+                <div class="col-12 mb-5"
+                     data-aos="fade-left"
+                     data-aos-delay="1000"
+                     data-aos-duration="1000"
+                >
+                    <h1 class="col-title">Regras</h1>
+                    <span class="content__inner-item">grupos de 2-4 pessoas</span><br/>
+                    <span class="content__inner-item">32 horas para desenvolvimento</span><br/>
+                    <span class="content__inner-item">código open-source</span><br/>
+                    <span class="content__inner-item">inscrição
                         <a style="text-decoration: underline; pointer-events: auto; cursor: pointer"
-                           target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSeDjpIa1dNp2fjQwwnbQyLTmUygSlTA1fdBA_QbCKbX3-x9tA/viewform?usp=sf_link">aqui</a>
+                           target="_blank" rel="noopener noreferrer"
+                           href="https://docs.google.com/forms/d/e/1FAIpQLSeDjpIa1dNp2fjQwwnbQyLTmUygSlTA1fdBA_QbCKbX3-x9tA/viewform?usp=sf_link">aqui</a>
                     </span>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div id="scene">
-        <img src="img/nave1.png" data-depth="0.2">
-        <img src="img/nave2.png" data-depth="0.5">
-        <img src="img/nave3.png" data-depth="0.7">
-        <img src="img/nave4.png" data-depth="0.1">
-    </div>
-
-    <nav class="navbar fixed-bottom navbar-dark bg-transperent">
-        <div class="frame__title-wrap">
-            <div class="frame__links">
-                <a>ISEP</a>
-                <a>29 Fevereiro</a>
-                <a>01 Março</a>
-            </div>
+<nav class="navbar fixed-bottom navbar-dark bg-transperent">
+    <div class="bottom-container">
+        <div style="margin-top: 30px; margin-bottom: 20px; text-align: center;">
+            <a style="opacity: 0.3; ">
+                Instituto Superior de Engenharia do Porto
+            </a>
         </div>
-        <span class="mr-0">A segunda edição da <b>Level-Up GameJam</b> criada pelo NEI regressa. Maior e melhor.</span>
-    </nav>
+        <span class="mr-0" style="text-align: center;">A segunda edição da <b>Level-Up GameJam</b> criada pelo NEI regressa. Maior e melhor.</span>
+    </div>
+</nav>
 
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/parallax.js"></script>
-    <script>
-        AOS.init();
-    </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/parallax.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
