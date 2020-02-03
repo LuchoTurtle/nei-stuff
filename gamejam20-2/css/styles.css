@@ -19,6 +19,98 @@ body {
     font-size: 1rem;
 }
 
+/* Space ships*/
+#scene {
+    position: absolute;
+}
+
+.scaleDown {
+    max-width:50%;
+    height:auto;
+}
+
+
+.space1 {
+    margin-left: 100px;
+    margin-top: 550px;
+}
+
+.space2 {
+    margin-left: 900px;
+    margin-top: 500px;
+}
+
+.space3 {
+    margin-left: 300px;
+}
+
+@media (max-width: 425px) {
+    .space1 {
+        margin-left: 0px;
+        margin-top: 480px;
+    }
+
+    .space2 {
+        margin-left: 150px;
+        margin-top: 280px;
+        display: none !important;
+    }
+
+    .space3 {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .space1 {
+        margin-left: 0px;
+        margin-top: 480px;
+    }
+
+    .space2 {
+        margin-left: 400px;
+        margin-top: 300px;
+        display: none !important;
+    }
+
+    .space3 {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .space1 {
+        margin-left: 0px;
+        margin-top: 480px;
+    }
+
+    .space2 {
+        margin-left: 400px;
+        margin-top: 300px;
+        display: none !important;
+    }
+
+    .space3 {
+        margin-left: 150px;
+    }
+}
+
+/* Fonts smaller on smaller stuff */
+@media (max-width: 375px) {
+    .smallerText {
+        font-size: 0.5em;
+    }
+}
+
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .col-title {
     opacity: 0.5;
     font-weight: bolder;
@@ -70,4 +162,12 @@ body {
     color: white;
     opacity: 1;
     margin: 0 0 0 1rem;
+}
+
+.bottom-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
