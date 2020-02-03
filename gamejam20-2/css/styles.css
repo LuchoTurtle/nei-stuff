@@ -91,12 +91,16 @@ body {
     }
 
     .space3 {
-        margin-left: 200px;
+        margin-left: 150px;
     }
 }
 
-
-
+/* Fonts smaller on smaller stuff */
+@media (max-width: 375px) {
+    .smallerText {
+        font-size: 0.5em;
+    }
+}
 
 
 /* Centered text */
