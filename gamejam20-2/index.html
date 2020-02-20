@@ -28,6 +28,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="css/scroll-down.css"/>
+
+    <script>
+        $(document).ready(function (){
+            $("#scrollMouse").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#sponsors").offset().top
+                }, 2000);
+            });
+        });
+    </script>
 
 </head>
 <body>
@@ -90,7 +101,7 @@
     </div>
 </div>
 
-<nav class="navbar navbar-dark bg-transperent">
+<div class="container d-flex justify-content-center align-items-center" style="margin-top: -40px;">
     <div class="bottom-container">
         <div style="margin-top: 30px; margin-bottom: 20px; text-align: center;">
             <a class="smallerText" style="opacity: 0.3; ">
@@ -99,11 +110,38 @@
         </div>
         <span class="mr-0 smallerText" style="text-align: center;">A segunda edição da <b>Level-Up GameJam</b> criada pelo NEI regressa. Maior e melhor.</span>
     </div>
-</nav>
+</div>
+
+<div class="container d-flex justify-content-center align-items-center mt-4 mb-3">
+    <div id="scrollMouse" class='mouse-container' style="cursor: pointer">
+        <div class='mouse'>
+            <span class='scroll-down'></span>
+        </div>
+    </div>
+</div>
+
+<div id="sponsors" class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="bottom-container">
+        <h1 class="col-title">Patrocinadores</h1>
+        <div class="col-6" style="justify-content: center; display: flex;">
+            <img class="mt-5 mb-5" src="img/rubber_chicken.png" class="img-fluid"/>
+        </div>
+    </div>
+</div>
+
+<div class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="bottom-container">
+        <h1 class="col-title">Agradecimentos</h1>
+        <div class="col-6" style="justify-content: center; display: flex;">
+            <img class="mt-5 mb-5" src="img/aeisep.png" class="img-fluid"/>
+        </div>
+    </div>
+</div>
 
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="js/parallax.js"></script>
+<script src="js/jquery.js"></script>
 <script>
     AOS.init();
 </script>

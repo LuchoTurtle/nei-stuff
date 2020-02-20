@@ -18,6 +18,7 @@ body {
     color: #ffffff;
     font-family: 'Press Start 2P', cursive;
     font-size: 1rem;
+    overflow-x: hidden;
 }
 
 /* Space ships*/
@@ -127,6 +128,12 @@ body {
     font-weight: bolder;
     text-transform: uppercase;
     font-size: xx-large;
+}
+
+@media (max-width: 425px) {
+    .col-title {
+        font-size: large;
+    }
 }
 
 .content__inner-item {
