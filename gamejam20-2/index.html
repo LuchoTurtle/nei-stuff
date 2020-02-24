@@ -34,7 +34,7 @@
         $(document).ready(function (){
             $("#scrollMouse").click(function (){
                 $('html, body').animate({
-                    scrollTop: $("#sponsors").offset().top
+                    scrollTop: $("#awards").offset().top
                 }, 2000);
             });
         });
@@ -46,9 +46,6 @@
     <a target="_blank" rel="noopener noreferrer" href="http://gamejam2019.nei-isep.org"
        class="navbar-brand"
        style="text-decoration: underline; pointer-events: auto; cursor: pointer; font-size: 0.5rem">edição anterior</a>
-
-    <span class="mr-0"
-          style="opacity: 0.5; text-align: center;">Prémios anunciados brevemente!</span>
 </nav>
 
 <div id="scene">
@@ -120,7 +117,30 @@
     </div>
 </div>
 
-<div id="sponsors" class="container d-flex justify-content-center align-items-center mt-5">
+<div id="awards" class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="bottom-container">
+        <h1 class="col-title">Prémios</h1>
+        <div class="container" style="display: flex; justify-content: center;">
+            <div class="row">
+                <div class="col-sm awards-container" style="flex: 1.8292">
+                    <img src="img/keyboard.png" class="img-fluid">
+                    <span>FORCA GRANDE PORTO</span>
+                </div>
+                <div class="col-sm awards-container" style="flex: 1.4492">
+                    <img src="img/xbox.png" class="img-fluid"/>
+                    <span>FORCA GRANDE PORTO</span>
+                </div>
+                <div class="col-sm awards-container" style="flex: 0.9983">
+                    <img src="img/steam.png" class="img-fluid"/>
+                    <span>FORCA GRANDE PORTO</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container d-flex justify-content-center align-items-center mt-5">
     <div class="bottom-container">
         <h1 class="col-title">Patrocinadores</h1>
         <div class="col-6" style="justify-content: center; display: flex;">
