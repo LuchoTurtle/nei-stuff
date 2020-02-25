@@ -32,10 +32,11 @@
     <link rel="stylesheet" type="text/css" href="css/scroll-down.css"/>
 
     <script>
+        // Scroll down to awards on clicking the mouse button
         $(document).ready(function (){
             $("#scrollMouse").click(function (){
                 $('html, body').animate({
-                    scrollTop: $("#awards").offset().top
+                    scrollTop: $("#schedule").offset().top
                 }, 2000);
             });
         });
@@ -99,26 +100,30 @@
     </div>
 </div>
 
-<div class="container d-flex justify-content-center align-items-center" style="margin-top: -40px;">
-    <div class="bottom-container">
-        <div style="margin-top: 30px; margin-bottom: 20px; text-align: center;">
-            <a class="smallerText" style="opacity: 0.3; ">
-                Instituto Superior de Engenharia do Porto
-            </a>
-        </div>
-        <span class="mr-0 smallerText" style="text-align: center;">A segunda edição da <b>Level-Up GameJam</b> criada pelo NEI regressa. Maior e melhor.</span>
-    </div>
-</div>
-
-<div class="container d-flex justify-content-center align-items-center mt-4 mb-3">
-    <div id="scrollMouse" class='mouse-container' style="cursor: pointer">
+<div class="container d-flex justify-content-center align-items-center mt-4 mb-5">
+    <div id="scrollMouse" class='mouse-container nes-pointer' >
         <div class='mouse'>
             <span class='scroll-down'></span>
         </div>
     </div>
 </div>
 
-<div class="container d-flex justify-content-center align-items-center mt-5">
+<div class="container d-flex justify-content-center align-items-center" style="margin-top: -40px;">
+    <div class="bottom-container">
+        <div style="margin-top: 30px; margin-bottom: 20px; text-align: center;">
+            <p class="nes-balloon from-right nes-pointer" style="color: black">
+                Instituto Superior de Engenharia do Porto
+            </p>
+        </div>
+
+        <p class="nes-balloon from-left nes-pointer" style="color: black">
+            A segunda edição da <b>LEVEL-UP GAMEJAM</b> criada pelo NEI regressa. Maior e melhor.
+        </p>
+    </div>
+</div>
+
+
+<div id="schedule"  class="container d-flex justify-content-center align-items-center mt-5">
     <div class="bottom-container">
         <h1 class="col-title">Horário</h1>
         <div class="nes-container is-dark with-title mt-5">
@@ -210,7 +215,7 @@
     </div>
 </div>
 
-<div id="awards" class="container d-flex justify-content-center align-items-center mt-5">
+<div class="container d-flex justify-content-center align-items-center mt-5">
     <div class="bottom-container">
         <h1 class="col-title">Prémios</h1>
         <div class="container mt-5 mb-5" style="display: flex; justify-content: center;">
