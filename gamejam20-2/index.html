@@ -27,14 +27,14 @@
             crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
-    <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <link rel="stylesheet" type="text/css" href="css/scroll-down.css"/>
 
     <script>
         // Scroll down to awards on clicking the mouse button
-        $(document).ready(function (){
-            $("#scrollMouse").click(function (){
+        $(document).ready(function () {
+            $("#scrollMouse").click(function () {
                 $('html, body').animate({
                     scrollTop: $("#schedule").offset().top
                 }, 2000);
@@ -101,7 +101,7 @@
 </div>
 
 <div class="container d-flex justify-content-center align-items-center mt-4 mb-5">
-    <div id="scrollMouse" class='mouse-container nes-pointer' >
+    <div id="scrollMouse" class='mouse-container nes-pointer'>
         <div class='mouse'>
             <span class='scroll-down'></span>
         </div>
@@ -123,7 +123,7 @@
 </div>
 
 
-<div id="schedule"  class="container d-flex justify-content-center align-items-center mt-5">
+<div id="schedule" class="container d-flex justify-content-center align-items-center mt-5">
     <div class="bottom-container">
         <h1 class="col-title">Horário</h1>
         <div class="nes-container is-dark with-title mt-5">
@@ -207,7 +207,7 @@
                 <div class="col-sm awards-container">
                     <img src="img/keyboard.png" class="img-fluid">
                     <span style="text-align: center"><strong>1º Lugar</strong></br>
-                    Teclado Corsair K55
+                        Teclado Corsair K55
                     </span>
                     <span style="font-size: 8px; text-align: center">para cada elemento da equipa</span>
                 </div>
@@ -240,7 +240,8 @@
             <img class="mt-5 mb-5" src="img/gilt.png" class="img-fluid" style="max-width:200%; max-height:200%;"/>
         </div>
         <div class="col-6" style="justify-content: center; display: flex;">
-            <img class="mt-5 mb-5" src="img/ground_control.jpg" class="img-fluid" style="max-width:200%; max-height:200%;"/>
+            <img class="mt-5 mb-5" src="img/ground_control.jpg" class="img-fluid"
+                 style="max-width:200%; max-height:200%;"/>
         </div>
         <div class="col-6" style="justify-content: center; display: flex;">
             <img class="mt-5 mb-5" src="img/dominos.png" class="img-fluid" style="max-width:200%; max-height:200%;"/>
@@ -254,25 +255,39 @@
         <div class="bottom-container">
             <div style="margin-top: 30px; margin-bottom: 20px; text-align: center;">
                 <p class="nes-balloon from-right nes-pointer" style="color: black">
-                    Da criatividade dos participantes, tendo sido o principal tema <strong>You Are Your Own Enemy</strong>,
+                    Da criatividade dos participantes, tendo sido o principal tema <strong>You Are Your Own
+                    Enemy</strong>,
                     saíram jogos interessantes. Confere de seguida!
                 </p>
             </div>
 
             <div class="row">
-                <div class="col-lg-4 col-12" style="justify-content: center; display: flex;">
-                    <p class="nes-balloon from-right nes-pointer" style="color: black">
-                        Jogo 1
+                <div class="col-lg-3 col-12" style="justify-content: center; display: flex;"
+                     onclick="window.open('https://support.wwf.org.uk', '_blank')">
+                    <p class="nes-balloon from-right nes-pointer"
+                       style="color: black; text-align: center; background-color: #DAA520">
+                        <strong>Sem Equipa</strong> </br>
                     </p>
                 </div>
-                <div class="col-lg-4 col-12" style="justify-content: center; display: flex;">
-                    <p class="nes-balloon from-right nes-pointer" style="color: black">
-                        Jogo 2
+                <div class="col-lg-3 col-12" style="justify-content: center; display: flex;"
+                     onclick="window.open('https://support.wwf.org.uk', '_blank');">
+                    <p href="www.google.com" class="nes-balloon from-right nes-pointer"
+                       style="color: black; text-align: center; background-color: #808080">
+                        <strong>CodeWizards</strong> </br>
                     </p>
                 </div>
-                <div class="col-lg-4 col-12" style="justify-content: center; display: flex;">
-                    <p class="nes-balloon from-right nes-pointer" style="color: black">
-                        Jogo 3
+                <div class="col-lg-3 col-12" style="justify-content: center; display: flex;"
+                     onclick="window.open('https://codeload.github.com/nei-isep/ChocosDeDomingoATarde/zip/master', '_blank');">
+                    <p class="nes-balloon from-right nes-pointer"
+                       style="color: black; text-align: center; background-color: #9F674C">
+                        <strong>Chocos de Domingo à Tarde</strong> </br>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-12" style="justify-content: center; display: flex;"
+                     onclick="window.open('https://github.com/nei-isep/TriceraTOP2/releases/download/BugFix/LevelUpGJ2020-Build.zip', '_blank');">
+                    <p class="nes-balloon from-right nes-pointer"
+                       style="color: black; text-align: center">
+                        <strong>TriceraTop</strong> </br>
                     </p>
                 </div>
             </div>
