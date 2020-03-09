@@ -64,7 +64,7 @@ class PageHeader extends React.Component {
                         <h1 className="glitch" data-text="Git Overflow">Git Overflow</h1>
                         <Typing speed={5}>
                             <h3 style={{textTransform: "lowercase"}}>
-                                A maior hackathon do ISEP chegou para ficar.
+                                A maior <span style={{color: "#00aeef"}}>hackathon</span> do ISEP chegou para ficar.
                             </h3>
                         </Typing>
                     </div>

@@ -21,6 +21,7 @@ import React from "react";
 import IndexNavbar from "components/Navbars/IndexNavbar.jsx";
 import PageHeader from "components/PageHeader/PageHeader.jsx";
 import Footer from "components/Footer/Footer.jsx";
+import SectionIntro from "components/Sections/SectionIntro"
 
 // sections for this page/view
 import Basics from "views/IndexSections/Basics.jsx";
@@ -49,6 +50,7 @@ class Index extends React.Component {
         <div className="wrapper">
           <PageHeader />
           <div className="main">
+            <SectionIntro/>
             <Basics />
             <Navbars />
             <Tabs />

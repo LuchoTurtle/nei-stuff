@@ -40,7 +40,8 @@ class ComponentsNavbar extends React.Component {
     super(props);
     this.state = {
       collapseOpen: false,
-      color: "navbar-transparent"
+      color: "navbar-transparent",
+      displayNavTitle: "none"
     };
   }
   componentDidMount() {
@@ -55,14 +56,16 @@ class ComponentsNavbar extends React.Component {
       document.body.scrollTop > 99
     ) {
       this.setState({
-        color: "bg-info"
+        color: "bg-info",
+        displayNavTitle: ""
       });
     } else if (
       document.documentElement.scrollTop < 100 ||
       document.body.scrollTop < 100
     ) {
       this.setState({
-        color: "navbar-transparent"
+        color: "navbar-transparent",
+        displayNavTitle: "none"
       });
     }
   };
@@ -103,8 +106,7 @@ class ComponentsNavbar extends React.Component {
               title="Designed and Coded by Creative Tim"
               tag={Link}
             >
-              <span>BLK• </span>
-              Design System React
+              <span style={{display: this.state.displayNavTitle}}>GIT OVERFLOW</span>
             </NavbarBrand>
             <button
               aria-expanded={this.state.collapseOpen}
