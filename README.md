@@ -14,7 +14,7 @@
     <img src="./nei_isep.png" alt="NEI Logo">
   </a>
 
-  <h3 align="center">Fitly</h3>
+  <h3 align="center">NEI-ISEP</h3>
 
   <p align="center">
     Students association thriving for the betterment of the ISEP Informatics community.
