@@ -17,23 +17,8 @@
 */
 import React from "react";
 // react plugin used to create charts
-import {Line} from "react-chartjs-2";
 // reactstrap components
-import {
-    Button,
-    Card,
-    CardBody,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-    Col,
-    Container,
-    ListGroup,
-    ListGroupItem, Nav, NavItem, NavLink, Progress,
-    Row
-} from "reactstrap";
-import bigChartData from "variables/charts.jsx";
-import classnames from "classnames";
+import {Col, Container, Progress, Row} from "reactstrap";
 
 // core components
 

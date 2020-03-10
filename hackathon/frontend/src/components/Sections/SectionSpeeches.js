@@ -21,49 +21,20 @@ import classnames from "classnames";
 import PerfectScrollbar from "perfect-scrollbar";
 // reactstrap components
 import {
-    Button,
     Card,
-    CardHeader,
     CardBody,
-    Label,
-    FormGroup,
-    Form,
-    Input,
-    FormText,
+    CardHeader,
+    Col,
+    Container,
+    Nav,
     NavItem,
     NavLink,
-    Nav,
-    Table,
-    TabContent,
-    TabPane,
-    Container,
     Row,
-    Col,
-    UncontrolledTooltip,
-    UncontrolledCarousel
+    TabContent,
+    Table,
+    TabPane
 } from "reactstrap";
-
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.jsx";
-import Footer from "components/Footer/Footer.jsx";
-
-const carouselItems = [
-    {
-        src: require("assets/img/denys.jpg"),
-        altText: "Slide 1",
-        caption: "Big City Life, United States"
-    },
-    {
-        src: require("assets/img/fabien-bazanegue.jpg"),
-        altText: "Slide 2",
-        caption: "Somewhere Beyond, United States"
-    },
-    {
-        src: require("assets/img/mark-finn.jpg"),
-        altText: "Slide 3",
-        caption: "Stocks, United States"
-    }
-];
 
 let ps = null;
 

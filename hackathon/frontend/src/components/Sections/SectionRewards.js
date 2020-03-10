@@ -17,27 +17,10 @@
 */
 import React from "react";
 // react plugin used to create charts
-import { Line } from "react-chartjs-2";
 // reactstrap components
-import {
-    Button,
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    CardTitle,
-    ListGroupItem,
-    ListGroup,
-    Container,
-    Row,
-    Col
-} from "reactstrap";
+import {Card, CardBody, CardHeader, Col, Container, ListGroup, ListGroupItem, Row} from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.jsx";
-import Footer from "components/Footer/Footer.jsx";
-
-import bigChartData from "variables/charts.jsx";
 
 class SectionRewards extends React.Component {
     render() {
