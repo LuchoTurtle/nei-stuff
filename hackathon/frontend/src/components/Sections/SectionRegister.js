@@ -81,7 +81,7 @@ class SectionRegister extends React.Component {
                     <div className="page-header">
                         <div className="page-header-image" />
                         <div className="content">
-                            <Container>
+                            <Container style={{paddingTop: "0px"}}>
                                 <Row>
                                     <Col className="offset-lg-0 offset-md-3" lg="5" md="6">
                                         <div
@@ -100,7 +100,7 @@ class SectionRegister extends React.Component {
                                                     alt="..."
                                                     src={require("assets/img/square-purple-1.png")}
                                                 />
-                                                <CardTitle tag="h4">Registo</CardTitle>
+                                                <CardTitle tag="h4" style={{color: "white"}}>Registo</CardTitle>
                                             </CardHeader>
                                             <CardBody>
                                                 <Form className="form">

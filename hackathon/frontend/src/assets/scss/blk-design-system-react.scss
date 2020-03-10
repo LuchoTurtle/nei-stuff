@@ -121,4 +121,17 @@
   #section_intro {
     margin-bottom: 10%;
   }
+
+  .speaker-text{
+    padding-top: 25px;
+  }
+
+  #speaker1 {
+    padding-top: 1px;
+  }
+}
+
+/* Blur filter */
+.blurred {
+  filter: blur(18px);
 }

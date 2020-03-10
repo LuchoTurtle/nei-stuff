@@ -24,6 +24,9 @@ import SectionIntro from "components/Sections/SectionIntro"
 import SectionRegister from "components/Sections/SectionRegister"
 import SectionIntroText from "components/Sections/SectionIntroText"
 import SectionTimeline from "components/Sections/SectionTimeline"
+import SectionSpeeches from "components/Sections/SectionSpeeches"
+
+
 // sections for this page/view
 import Basics from "views/IndexSections/Basics.jsx";
 import Navbars from "views/IndexSections/Navbars.jsx";
@@ -57,6 +60,7 @@ class Index extends React.Component {
           <div className="main">
             <SectionIntroText/>
             <SectionIntro/>
+            <SectionSpeeches/>
             <SectionTimeline/>
             <Element name="section_register_scroll">
               <SectionRegister/>

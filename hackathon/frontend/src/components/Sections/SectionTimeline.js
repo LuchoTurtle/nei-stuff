@@ -53,30 +53,8 @@ class SectionTimeline extends React.Component {
                         className="path"
                         src={require("assets/img/path5.png")}
                     />
-                    <Container>
+                    <Container style={{marginTop: "0%"}}>
                         <Row className="row-grid justify-content-between">
-                            <Col md="6" style={{margin: "auto"}}>
-                                <div className="progress-container">
-                                    <span className="progress-badge">Combina com os teus amigos</span>
-                                    <Progress max="100" value="25">
-                                    </Progress>
-                                </div>
-                                <div className="progress-container">
-                                    <span className="progress-badge">Regista-te</span>
-                                    <Progress max="100" value="50">
-                                    </Progress>
-                                </div>
-                                <div className="progress-container">
-                                    <span className="progress-badge">Cria ou junta-te a uma equipa</span>
-                                    <Progress max="100" value="75">
-                                    </Progress>
-                                </div>
-                                <div className="progress-container progress-success">
-                                    <span className="progress-badge">Comparece no evento!</span>
-                                    <Progress max="100" value="100">
-                                    </Progress>
-                                </div>
-                            </Col>
                             <Col md="6">
                                 <div className="px-md-5">
                                     <hr className="line-success" />
@@ -102,6 +80,28 @@ class SectionTimeline extends React.Component {
                                             </div>
                                         </li>
                                     </ul>
+                                </div>
+                            </Col>
+                            <Col md="6" style={{margin: "auto"}}>
+                                <div className="progress-container">
+                                    <span className="progress-badge">Combina com os teus amigos</span>
+                                    <Progress max="100" value="25">
+                                    </Progress>
+                                </div>
+                                <div className="progress-container">
+                                    <span className="progress-badge">Regista-te</span>
+                                    <Progress max="100" value="50">
+                                    </Progress>
+                                </div>
+                                <div className="progress-container">
+                                    <span className="progress-badge">Cria ou junta-te a uma equipa</span>
+                                    <Progress max="100" value="75">
+                                    </Progress>
+                                </div>
+                                <div className="progress-container progress-success">
+                                    <span className="progress-badge">Comparece no evento!</span>
+                                    <Progress max="100" value="100">
+                                    </Progress>
                                 </div>
                             </Col>
                         </Row>
