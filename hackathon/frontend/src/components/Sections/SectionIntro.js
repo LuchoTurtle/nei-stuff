@@ -164,7 +164,7 @@ class SectionIntro extends React.Component {
                                             <div className="icon icon-primary">
                                                 <i className="tim-icons icon-money-coins" />
                                             </div>
-                                            <h4 className="info-title">Useful</h4>
+                                            <h4 className="info-title">Útil</h4>
                                             <hr className="line-primary" />
                                             <p>
                                                 Neste tema estamos à procura de aplicações úteis. Uma aplicação
@@ -178,7 +178,7 @@ class SectionIntro extends React.Component {
                                             <div className="icon icon-warning">
                                                 <i className="tim-icons icon-chart-pie-36" />
                                             </div>
-                                            <h4 className="info-title">Funny</h4>
+                                            <h4 className="info-title">Engraçado</h4>
                                             <hr className="line-warning" />
                                             <p>
                                                 Projetos que fazem as pessoas geralmente rir. Qualquer coisa
