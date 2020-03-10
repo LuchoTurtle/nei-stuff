@@ -16,7 +16,6 @@
 
 */
 import React from "react";
-
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.jsx";
 import PageHeader from "components/PageHeader/PageHeader.jsx";
@@ -24,7 +23,7 @@ import Footer from "components/Footer/Footer.jsx";
 import SectionIntro from "components/Sections/SectionIntro"
 import SectionRegister from "components/Sections/SectionRegister"
 import SectionIntroText from "components/Sections/SectionIntroText"
-
+import SectionTimeline from "components/Sections/SectionTimeline"
 // sections for this page/view
 import Basics from "views/IndexSections/Basics.jsx";
 import Navbars from "views/IndexSections/Navbars.jsx";
@@ -40,7 +39,6 @@ import Download from "views/IndexSections/Download.jsx";
 import * as Scroll from 'react-scroll';
 
 var Element = Scroll.Element;
-var scroller = Scroll.scroller;
 
 
 class Index extends React.Component {
@@ -59,6 +57,7 @@ class Index extends React.Component {
           <div className="main">
             <SectionIntroText/>
             <SectionIntro/>
+            <SectionTimeline/>
             <Element name="section_register_scroll">
               <SectionRegister/>
             </Element>

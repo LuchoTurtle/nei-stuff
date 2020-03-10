@@ -16,10 +16,7 @@
 
 */
 import React from "react";
-
 // reactstrap components
-import {Container} from "reactstrap";
-import Typing from 'react-typing-animation';
 import Particles from "react-particles-js";
 
 import "../../styles/glitch.scss"

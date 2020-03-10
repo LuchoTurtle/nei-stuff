@@ -17,27 +17,10 @@
 */
 import React from "react";
 // react plugin used to create charts
-import { Line } from "react-chartjs-2";
 // reactstrap components
-import {
-    Button,
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    CardTitle,
-    ListGroupItem,
-    ListGroup,
-    Container,
-    Row,
-    Col
-} from "reactstrap";
+import {Card, CardBody, CardTitle, Col, Container, Row} from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.jsx";
-import Footer from "components/Footer/Footer.jsx";
-
-import bigChartData from "variables/charts.jsx";
 
 class SectionIntro extends React.Component {
     componentDidMount() {
@@ -168,21 +151,6 @@ class SectionIntro extends React.Component {
                         </section>
                     </section>
                 <section className="section section-lg">
-                    <img
-                        alt="..."
-                        className="path"
-                        src={require("assets/img/path4.png")}
-                    />
-                    <img
-                        alt="..."
-                        className="path2"
-                        src={require("assets/img/path5.png")}
-                    />
-                    <img
-                        alt="..."
-                        className="path3"
-                        src={require("assets/img/path2.png")}
-                    />
                     <Container>
                         <Row className="justify-content-center">
                             <Col lg="12">

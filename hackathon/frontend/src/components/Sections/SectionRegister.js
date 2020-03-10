@@ -21,26 +21,24 @@ import classnames from "classnames";
 import {
     Button,
     Card,
-    CardHeader,
     CardBody,
     CardFooter,
+    CardHeader,
     CardImg,
     CardTitle,
-    Label,
-    FormGroup,
+    Col,
+    Container,
     Form,
+    FormGroup,
     Input,
+    InputGroup,
     InputGroupAddon,
     InputGroupText,
-    InputGroup,
-    Container,
-    Row,
-    Col
+    Label,
+    Row
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.jsx";
-import Footer from "components/Footer/Footer.jsx";
 
 class SectionRegister extends React.Component {
     state = {

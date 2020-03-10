@@ -17,9 +17,9 @@
 */
 import React from "react";
 import * as Scroll from 'react-scroll';
-
 // reactstrap components
-import { Button, Container, Row, Col, UncontrolledTooltip } from "reactstrap";
+import {Button, Col, Container, Row} from "reactstrap";
+
 var scroller = Scroll.scroller;
 
 class SectionIntroText extends React.Component {
