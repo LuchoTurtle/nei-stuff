@@ -35,7 +35,7 @@
     "chart.js": "2.7.3",
     "classnames": "2.2.6",
     "moment": "2.24.0",
-    "node-sass": "4.11.0",
+    "node-sass": "^4.13.1",
     "nouislider": "13.1.1",
     "perfect-scrollbar": "1.4.0",
     "react": "16.8.3",
@@ -46,6 +46,7 @@
     "react-particles-js": "^2.7.1",
     "react-router-dom": "4.3.1",
     "react-scripts": "2.1.5",
+    "react-scroll": "^1.7.16",
     "react-typing-animation": "^1.6.2",
     "reactstrap": "7.1.0",
     "three": "^0.114.0"

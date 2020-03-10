@@ -39,7 +39,7 @@ class PageHeader extends React.Component {
                     <div className="squares square7" />
                      */
                 }
-                <Container>
+                <div>
                     <Particles
                         height={"100vh"}
                         params={{
@@ -62,13 +62,11 @@ class PageHeader extends React.Component {
                         }}/>
                     <div className="content-center brand">
                         <h1 className="glitch" data-text="Git Overflow">Git Overflow</h1>
-                        <Typing speed={5}>
-                            <h3 style={{textTransform: "lowercase"}}>
-                                A maior <span style={{color: "#00aeef"}}>hackathon</span> do ISEP chegou para ficar.
-                            </h3>
-                        </Typing>
+                        <h3 style={{textTransform: "lowercase"}}>
+                            A maior <span style={{color: "#00aeef"}}>hackathon</span> do ISEP chegou para ficar.
+                        </h3>
                     </div>
-                </Container>
+                </div>
             </div>
         );
     }

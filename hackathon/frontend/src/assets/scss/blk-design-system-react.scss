@@ -114,3 +114,11 @@
 // React Differences
 
 @import "blk-design-system-react/react/react-differences";
+
+
+/* Mobile nitpicking */
+@media (max-width: 761px) {
+  #section_intro {
+    margin-bottom: 10%;
+  }
+}
