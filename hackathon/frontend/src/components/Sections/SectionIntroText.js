@@ -38,7 +38,7 @@ class SectionIntroText extends React.Component {
                             </h2>
                             <h4 className="description">
                                 Depois do sucesso da Game Jam deste ano, o NEI quer acabar o ano com mais um evento feito
-                                de estudantes, para estudantes. E nada melhor que acabar com uma hackathon e com um evento
+                                por estudantes, para estudantes. E nada melhor que acabar com uma hackathon e com um evento
                                 ainda maior. Estás interessado? Confere!
                             </h4>
                         </Col>

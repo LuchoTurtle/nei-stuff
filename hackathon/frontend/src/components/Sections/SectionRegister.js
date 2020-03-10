@@ -174,7 +174,7 @@ class SectionRegister extends React.Component {
                                                             </InputGroupText>
                                                         </InputGroupAddon>
                                                         <Input
-                                                            placeholder="Repeat password"
+                                                            placeholder="Repetir password"
                                                             type="text"
                                                             onFocus={e =>
                                                                 this.setState({ passwordFocus: true })
@@ -187,21 +187,21 @@ class SectionRegister extends React.Component {
                                                     <FormGroup check className="text-left">
                                                         <Label check>
                                                             <Input type="checkbox" />
-                                                            <span className="form-check-sign" />I agree to the{" "}
+                                                            <span className="form-check-sign" />Eu concordo com{" "}
                                                             <a
                                                                 href="#pablo"
                                                                 onClick={e => e.preventDefault()}
                                                             >
-                                                                terms and conditions
+                                                                termos e condições
                                                             </a>
                                                             .
                                                         </Label>
                                                     </FormGroup>
                                                 </Form>
                                             </CardBody>
-                                            <CardFooter>
+                                            <CardFooter style={{textAlign: "center"}}>
                                                 <Button className="btn-round" color="primary" size="lg">
-                                                    Get Started
+                                                    Registar
                                                 </Button>
                                             </CardFooter>
                                         </Card>

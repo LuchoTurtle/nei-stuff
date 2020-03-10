@@ -28,22 +28,14 @@ const bigChart = {
 
     return {
       labels: [
-        "JUN",
-        "FEB",
-        "MAR",
-        "APR",
-        "MAY",
-        "JUN",
-        "JUL",
-        "AUG",
-        "SEP",
-        "OCT",
-        "NOV",
-        "DEC"
+        "Combina com os teus amigos",
+        "Regista-te",
+        "Cria ou junta-te à tua equipa",
+        "Comparece no evento!",
       ],
       datasets: [
         {
-          label: "Data",
+          label: "",
           fill: true,
           backgroundColor: gradientFill,
           borderColor: "#1d8cf8",
@@ -58,7 +50,7 @@ const bigChart = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [80, 160, 200, 160, 250, 280, 220, 190, 200, 250, 290, 320]
+          data: [80, 160, 320, 500]
         }
       ]
     };

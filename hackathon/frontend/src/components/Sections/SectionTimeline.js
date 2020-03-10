@@ -19,8 +19,21 @@ import React from "react";
 // react plugin used to create charts
 import {Line} from "react-chartjs-2";
 // reactstrap components
-import {Card, CardBody, CardHeader, CardTitle, Col, Row} from "reactstrap";
+import {
+    Button,
+    Card,
+    CardBody,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+    Col,
+    Container,
+    ListGroup,
+    ListGroupItem, Nav, NavItem, NavLink, Progress,
+    Row
+} from "reactstrap";
 import bigChartData from "variables/charts.jsx";
+import classnames from "classnames";
 
 // core components
 
@@ -34,28 +47,65 @@ class SectionTimeline extends React.Component {
     render() {
         return (
             <>
-                <section className="section section-lg">
-                    <Col md="12">
-                        <Card className="card-chart card-plain">
-                            <CardHeader>
-                                <Row>
-                                    <Col className="text-left" sm="6">
-                                        <hr className="line-info" />
-                                        <h5 className="card-category" style={{textTransform: "lowercase"}}>O que tens de fazer</h5>
-                                        <CardTitle tag="h2">para te juntares</CardTitle>
-                                    </Col>
-                                </Row>
-                            </CardHeader>
-                            <CardBody>
-                                <div className="chart-area">
-                                    <Line
-                                        data={bigChartData.data}
-                                        options={bigChartData.options}
-                                    />
+                <section className="section section-lg section-safe">
+                    <img
+                        alt="..."
+                        className="path"
+                        src={require("assets/img/path5.png")}
+                    />
+                    <Container>
+                        <Row className="row-grid justify-content-between">
+                            <Col md="6" style={{margin: "auto"}}>
+                                <div className="progress-container">
+                                    <span className="progress-badge">Combina com os teus amigos</span>
+                                    <Progress max="100" value="25">
+                                    </Progress>
                                 </div>
-                            </CardBody>
-                        </Card>
-                    </Col>
+                                <div className="progress-container">
+                                    <span className="progress-badge">Regista-te</span>
+                                    <Progress max="100" value="50">
+                                    </Progress>
+                                </div>
+                                <div className="progress-container">
+                                    <span className="progress-badge">Cria ou junta-te a uma equipa</span>
+                                    <Progress max="100" value="75">
+                                    </Progress>
+                                </div>
+                                <div className="progress-container progress-success">
+                                    <span className="progress-badge">Comparece no evento!</span>
+                                    <Progress max="100" value="100">
+                                    </Progress>
+                                </div>
+                            </Col>
+                            <Col md="6">
+                                <div className="px-md-5">
+                                    <hr className="line-success" />
+                                    <h3>O que fazer para participar</h3>
+                                    <p>
+                                        Fala com os teus amigos e junta uma equipa com um mínimo de
+                                        duas pessoas. Esta aventura não é para ires sozinho portanto
+                                        assegura-te que trazes companhia.
+                                    </p>
+                                    <p>
+                                        Depois de juntares a tua equipa, regista-te (e os teus colegas
+                                        também) e cria uma equipa após te registares. Depois é só compareceres!
+                                    </p>
+                                    <ul className="list-unstyled mt-5">
+                                        <li className="py-2">
+                                            <div className="d-flex align-items-center">
+                                                <div className="icon icon-success mb-2">
+                                                    <i className="tim-icons icon-alert-circle-exc" />
+                                                </div>
+                                                <div className="ml-3">
+                                                    <h6>Comparece no evento! Se registares e não apareceres, estás a tirar o lugar a outra equipa.</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </section>
             </>
         );
