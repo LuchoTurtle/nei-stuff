@@ -371,11 +371,11 @@ class SectionSpeeches extends React.Component {
 
     render() {
         return (
-            <>
+            <div id="speeches-section">
                 {this.firstSpeaker()}
                 {this.secondSpeaker()}
                 {this.thirdSpeaker()}
-            </>
+            </div>
         );
     }
 }

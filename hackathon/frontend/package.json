@@ -46,7 +46,6 @@
     "react-particles-js": "^2.7.1",
     "react-router-dom": "4.3.1",
     "react-scripts": "2.1.5",
-    "react-scroll": "^1.7.16",
     "reactstrap": "7.1.0",
     "three": "^0.114.0"
   },

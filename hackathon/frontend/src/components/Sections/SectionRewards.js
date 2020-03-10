@@ -25,7 +25,7 @@ import {Card, CardBody, CardHeader, Col, Container, ListGroup, ListGroupItem, Ro
 class SectionRewards extends React.Component {
     render() {
         return (
-            <>
+            <div id="reward-section">
                 <div className="wrapper">
                     <section className="section section-lg section-coins">
                         <img
@@ -126,7 +126,7 @@ class SectionRewards extends React.Component {
                         </Container>
                     </section>
                 </div>
-            </>
+            </div>
         );
     }
 }

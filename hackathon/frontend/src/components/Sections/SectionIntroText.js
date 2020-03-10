@@ -16,11 +16,8 @@
 
 */
 import React from "react";
-import * as Scroll from 'react-scroll';
 // reactstrap components
-import {Button, Col, Container, Row} from "reactstrap";
-
-var scroller = Scroll.scroller;
+import {Col, Container, Row} from "reactstrap";
 
 class SectionIntroText extends React.Component {
     render() {
@@ -41,25 +38,6 @@ class SectionIntroText extends React.Component {
                                 por estudantes, para estudantes. E nada melhor que acabar com uma hackathon e com um evento
                                 ainda maior. Estás interessado? Confere!
                             </h4>
-                        </Col>
-                        <Col className="text-center" lg="8" md="12">
-                            <Button
-                                id="go_to_register"
-                                className="btn-round"
-                                color="info"
-                                role="button"
-                                size="lg"
-                                onClick={ () => {
-                                    scroller.scrollTo('section_register_scroll', {
-                                        duration: 1500,
-                                        delay: 100,
-                                        smooth: true,
-                                        offset: 50, // Scrolls to element + 50 pixels down the page
-                                    })
-                                }}
-                            >
-                               Ir para registo
-                            </Button>
                         </Col>
                     </Row>
                 </Container>

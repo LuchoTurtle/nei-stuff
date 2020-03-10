@@ -16,24 +16,9 @@
 
 */
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 // reactstrap components
-import {
-  Button,
-  Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  NavbarBrand,
-  Navbar,
-  NavItem,
-  NavLink,
-  Nav,
-  Container,
-  Row,
-  Col
-} from "reactstrap";
+import {Button, Col, Collapse, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink, Row} from "reactstrap";
 
 class ComponentsNavbar extends React.Component {
   constructor(props) {
@@ -44,12 +29,15 @@ class ComponentsNavbar extends React.Component {
       displayNavTitle: "none"
     };
   }
+
   componentDidMount() {
     window.addEventListener("scroll", this.changeColor);
   }
+
   componentWillUnmount() {
     window.removeEventListener("scroll", this.changeColor);
   }
+
   changeColor = () => {
     if (
       document.documentElement.scrollTop > 99 ||
@@ -69,27 +57,56 @@ class ComponentsNavbar extends React.Component {
       });
     }
   };
+
   toggleCollapse = () => {
     document.documentElement.classList.toggle("nav-open");
     this.setState({
       collapseOpen: !this.state.collapseOpen
     });
   };
+
   onCollapseExiting = () => {
     this.setState({
       collapseOut: "collapsing-out"
     });
   };
+
   onCollapseExited = () => {
     this.setState({
       collapseOut: ""
     });
   };
+
   scrollToDownload = () => {
     document
       .getElementById("download-section")
       .scrollIntoView({ behavior: "smooth" });
   };
+
+  scrollToIntro = () => {
+    document
+        .getElementById("intro-section")
+        .scrollIntoView({ behavior: "smooth" });
+  };
+
+  scrollToRewards = () => {
+    document
+        .getElementById("reward-section")
+        .scrollIntoView({ behavior: "smooth" });
+  };
+
+  scrollToSpeeches = () => {
+    document
+        .getElementById("speeches-section")
+        .scrollIntoView({ behavior: "smooth" });
+  };
+
+  scrollToRegister = () => {
+    document
+        .getElementById("register-section")
+        .scrollIntoView({ behavior: "smooth" });
+  };
+
   render() {
     return (
       <Navbar
@@ -129,7 +146,7 @@ class ComponentsNavbar extends React.Component {
               <Row>
                 <Col className="collapse-brand" xs="6">
                   <a href="#pablo" onClick={e => e.preventDefault()}>
-                    BLK•React
+                    GIT OVERFLOW
                   </a>
                 </Col>
                 <Col className="collapse-close text-right" xs="6">
@@ -147,77 +164,37 @@ class ComponentsNavbar extends React.Component {
               <NavItem className="p-0">
                 <NavLink
                   data-placement="bottom"
-                  href="https://twitter.com/CreativeTim"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  title="Follow us on Twitter"
+                  onClick={this.scrollToIntro}
+                  style={{cursor: "pointer"}}
                 >
-                  <i className="fab fa-twitter" />
-                  <p className="d-lg-none d-xl-none">Twitter</p>
+                  <span>Sobre o evento</span>
                 </NavLink>
               </NavItem>
               <NavItem className="p-0">
                 <NavLink
-                  data-placement="bottom"
-                  href="https://www.facebook.com/CreativeTim"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  title="Like us on Facebook"
+                    data-placement="bottom"
+                    onClick={this.scrollToRewards}
+                    style={{cursor: "pointer"}}
                 >
-                  <i className="fab fa-facebook-square" />
-                  <p className="d-lg-none d-xl-none">Facebook</p>
+                  <span>Prémios</span>
                 </NavLink>
               </NavItem>
               <NavItem className="p-0">
                 <NavLink
-                  data-placement="bottom"
-                  href="https://www.instagram.com/CreativeTimOfficial"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  title="Follow us on Instagram"
+                    data-placement="bottom"
+                    onClick={this.scrollToSpeeches}
+                    style={{cursor: "pointer"}}
                 >
-                  <i className="fab fa-instagram" />
-                  <p className="d-lg-none d-xl-none">Instagram</p>
+                  <span>Palestras</span>
                 </NavLink>
               </NavItem>
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  data-toggle="dropdown"
-                  href="#pablo"
-                  nav
-                  onClick={e => e.preventDefault()}
-                >
-                  <i className="fa fa-cogs d-lg-none d-xl-none" />
-                  Getting started
-                </DropdownToggle>
-                <DropdownMenu className="dropdown-with-icons">
-                  <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/tutorial">
-                    <i className="tim-icons icon-paper" />
-                    Documentation
-                  </DropdownItem>
-                  <DropdownItem tag={Link} to="/register-page">
-                    <i className="tim-icons icon-bullet-list-67" />
-                    Register Page
-                  </DropdownItem>
-                  <DropdownItem tag={Link} to="/landing-page">
-                    <i className="tim-icons icon-image-02" />
-                    Landing Page
-                  </DropdownItem>
-                  <DropdownItem tag={Link} to="/profile-page">
-                    <i className="tim-icons icon-single-02" />
-                    Profile Page
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
               <NavItem>
                 <Button
                   className="nav-link d-none d-lg-block"
                   color="default"
-                  onClick={this.scrollToDownload}
+                  onClick={this.scrollToRegister}
                 >
-                  <i className="tim-icons icon-cloud-download-93" /> Download
+                  <i className="tim-icons icon-simple-add" /> Registar
                 </Button>
               </NavItem>
             </Nav>

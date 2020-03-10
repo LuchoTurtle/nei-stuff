@@ -33,11 +33,6 @@ class SectionTimeline extends React.Component {
         return (
             <>
                 <section className="section section-lg section-safe">
-                    <img
-                        alt="..."
-                        className="path"
-                        src={require("assets/img/path5.png")}
-                    />
                     <Container style={{marginTop: "0%"}}>
                         <Row className="row-grid justify-content-between">
                             <Col md="6">

@@ -16,18 +16,8 @@
 
 */
 import React from "react";
-import { Link } from "react-router-dom";
 // reactstrap components
-import {
-  Button,
-  NavItem,
-  NavLink,
-  Nav,
-  Container,
-  Row,
-  Col,
-  UncontrolledTooltip
-} from "reactstrap";
+import {Button, Col, Container, Row, UncontrolledTooltip} from "reactstrap";
 
 class Footer extends React.Component {
   render() {
@@ -35,95 +25,104 @@ class Footer extends React.Component {
       <footer className="footer">
         <Container>
           <Row>
-            <Col md="3">
-              <h1 className="title">BLK•</h1>
-            </Col>
-            <Col md="3">
-              <Nav>
-                <NavItem>
-                  <NavLink to="/" tag={Link}>
-                    Home
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/landing-page" tag={Link}>
-                    Landing
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/register-page" tag={Link}>
-                    Register
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/profile-page" tag={Link}>
-                    Profile
-                  </NavLink>
-                </NavItem>
-              </Nav>
-            </Col>
-            <Col md="3">
-              <Nav>
-                <NavItem>
-                  <NavLink href="https://creative-tim.com/contact-us?ref=blkdsr-footer">
-                    Contact Us
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="https://creative-tim.com/about-us?ref=blkdsr-footer">
-                    About Us
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="https://creative-tim.com/blog?ref=blkdsr-footer">
-                    Blog
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="https://opensource.org/licenses/MIT">
-                    License
-                  </NavLink>
-                </NavItem>
-              </Nav>
-            </Col>
-            <Col md="3">
-              <h3 className="title">Follow us:</h3>
+            <Col md="12"
+                 style={{display: "flex",
+                   flexDirection: "column",
+                   justifyContent: "center",
+                   alignItems: "center"}}
+            >
+              <h5>organizado por</h5>
+              <h1>NEI-ISEP</h1>
               <div className="btn-wrapper profile">
                 <Button
-                  className="btn-icon btn-neutral btn-round btn-simple"
-                  color="default"
-                  href="https://twitter.com/creativetim"
-                  id="tooltip622135962"
-                  target="_blank"
+                    className="btn-icon btn-neutral btn-round btn-simple"
+                    color="default"
+                    href="https://www.instagram.com/nei_isep/"
+                    id="tooltipinstagram"
+                    target="_blank"
+                >
+                  <i className="fab fa-instagram" />
+                </Button>
+                <UncontrolledTooltip delay={0} target="tooltipinstagram">
+                  Segue-nos
+                </UncontrolledTooltip>
+
+                <Button
+                    className="btn-icon btn-neutral btn-round btn-simple"
+                    color="default"
+                    href="https://twitter.com/nei_isep"
+                    id="tooltiptwitter"
+                    target="_blank"
                 >
                   <i className="fab fa-twitter" />
                 </Button>
-                <UncontrolledTooltip delay={0} target="tooltip622135962">
-                  Follow us
+                <UncontrolledTooltip delay={0} target="tooltiptwitter">
+                  Segue-nos
                 </UncontrolledTooltip>
+
                 <Button
-                  className="btn-icon btn-neutral btn-round btn-simple"
-                  color="default"
-                  href="https://www.facebook.com/creativetim"
-                  id="tooltip230450801"
-                  target="_blank"
+                    className="btn-icon btn-neutral btn-round btn-simple"
+                    color="default"
+                    href="https://www.facebook.com/nei.isep"
+                    id="tooltipfacebook"
+                    target="_blank"
                 >
                   <i className="fab fa-facebook-square" />
                 </Button>
-                <UncontrolledTooltip delay={0} target="tooltip230450801">
-                  Like us
+                <UncontrolledTooltip delay={0} target="tooltipfacebook">
+                  Dá like na nossa página
                 </UncontrolledTooltip>
+
                 <Button
-                  className="btn-icon btn-neutral btn-round btn-simple"
-                  color="default"
-                  href="https://dribbble.com/creativetim"
-                  id="tooltip318450378"
-                  target="_blank"
+                    className="btn-icon btn-neutral btn-round btn-simple"
+                    color="default"
+                    href="https://www.youtube.com/channel/UCPFWp4B34GoqxMaPbS7Xsjg"
+                    id="tooltipyoutube"
+                    target="_blank"
                 >
-                  <i className="fab fa-dribbble" />
+                  <i className="fab fa-youtube" />
                 </Button>
-                <UncontrolledTooltip delay={0} target="tooltip318450378">
-                  Follow us
+                <UncontrolledTooltip delay={0} target="tooltipyoutube">
+                  Subscreve ao nosso canal
+                </UncontrolledTooltip>
+
+                <Button
+                    className="btn-icon btn-neutral btn-round btn-simple"
+                    color="default"
+                    href="https://www.linkedin.com/company/nei-isep/"
+                    id="tooltiplinkedin"
+                    target="_blank"
+                >
+                  <i className="fab fa-linkedin" />
+                </Button>
+                <UncontrolledTooltip delay={0} target="tooltiplinkedin">
+                  Conecta-te
+                </UncontrolledTooltip>
+
+                <Button
+                    className="btn-icon btn-neutral btn-round btn-simple"
+                    color="default"
+                    href="mailto:info@nei-isep.org"
+                    id="tooltipemail"
+                    target="_blank"
+                >
+                  <i className="fas fa-envelope" />
+                </Button>
+                <UncontrolledTooltip delay={0} target="tooltipemail">
+                  Manda-nos um e-mail
+                </UncontrolledTooltip>
+
+                <Button
+                    className="btn-icon btn-neutral btn-round btn-simple"
+                    color="default"
+                    href="https://www.nei-isep.org/"
+                    id="tooltipwebsite"
+                    target="_blank"
+                >
+                  <i className="fas fa-home" />
+                </Button>
+                <UncontrolledTooltip delay={0} target="tooltipwebsite">
+                  O nosso site :)
                 </UncontrolledTooltip>
               </div>
             </Col>

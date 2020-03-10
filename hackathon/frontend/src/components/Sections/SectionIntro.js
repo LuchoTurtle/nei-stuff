@@ -31,7 +31,7 @@ class SectionIntro extends React.Component {
     }
     render() {
         return (
-            <>
+            <div id="intro-section">
                 <section className="section section-lg">
                         <section className="section">
                             <img
@@ -207,7 +207,7 @@ class SectionIntro extends React.Component {
                         </Row>
                     </Container>
                 </section>
-            </>
+            </div>
         );
     }
 }

@@ -76,7 +76,7 @@ class SectionRegister extends React.Component {
     };
     render() {
         return (
-            <>
+            <div id="register-section">
                 <div className="wrapper">
                     <div className="page-header">
                         <div className="page-header-image" />
@@ -237,7 +237,7 @@ class SectionRegister extends React.Component {
                         </div>
                     </div>
                 </div>
-            </>
+            </div>
         );
     }
 }

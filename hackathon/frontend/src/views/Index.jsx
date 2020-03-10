@@ -28,6 +28,7 @@ import SectionSpeeches from "components/Sections/SectionSpeeches"
 import SectionRewards from "components/Sections/SectionRewards"
 
 
+/*
 // sections for this page/view
 import Basics from "views/IndexSections/Basics.jsx";
 import Navbars from "views/IndexSections/Navbars.jsx";
@@ -40,10 +41,7 @@ import NucleoIcons from "views/IndexSections/NucleoIcons.jsx";
 import Signup from "views/IndexSections/Signup.jsx";
 import Examples from "views/IndexSections/Examples.jsx";
 import Download from "views/IndexSections/Download.jsx";
-import * as Scroll from 'react-scroll';
-
-var Element = Scroll.Element;
-
+*/
 
 class Index extends React.Component {
   componentDidMount() {
@@ -64,12 +62,10 @@ class Index extends React.Component {
             <SectionRewards/>
             <SectionSpeeches/>
             <SectionTimeline/>
-            <Element name="section_register_scroll">
-              <SectionRegister/>
-            </Element>
+            <SectionRegister/>
 
-
-
+            {
+              /*
             <Basics />
             <Navbars />
             <Tabs />
@@ -81,6 +77,8 @@ class Index extends React.Component {
             <Signup />
             <Examples />
             <Download />
+               */
+            }
           </div>
           <Footer />
         </div>
