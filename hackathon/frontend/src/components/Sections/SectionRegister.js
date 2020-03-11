@@ -35,27 +35,37 @@ import {
     InputGroupAddon,
     InputGroupText,
     Label,
-    Row
+    Row,
+    Modal,
+    ModalHeader,
+    ModalBody
 } from "reactstrap";
 
 // core components
 
 class SectionRegister extends React.Component {
-    state = {
-        squares1to6: "",
-        squares7and8: "",
+    constructor(props) {
+        super(props);
+        this.state = {
+            squares1to6: "",
+            squares7and8: "",
 
-        passwordSame: null,
-        usernameEmpty: null,
-        emailEmpty: null,
-        agreedError: "",
+            passwordSame: null,
+            usernameEmpty: null,
+            emailEmpty: null,
+            agreedError: "",
 
-        password: "",
-        repeatPassword: "",
-        email: "",
-        username: "",
-        agreedWithTerms: false,
-    };
+            password: "",
+            repeatPassword: "",
+            email: "",
+            username: "",
+            agreedWithTerms: false,
+
+            modalLarge: false
+        };
+
+        this.toggleModalLarge = this.toggleModalLarge.bind(this);
+    }
 
     componentDidMount() {
         document.body.classList.toggle("register-page");
@@ -91,6 +101,12 @@ class SectionRegister extends React.Component {
 
     passwordCheck() {
         this.setState({passwordSame: this.state.password === this.state.repeatPassword && this.state.password !== ""})
+    }
+
+    toggleModalLarge(){
+        this.setState({
+            modalLarge: !this.state.modalLarge
+        });
     }
 
     submit = () => {
@@ -249,7 +265,10 @@ class SectionRegister extends React.Component {
                                                             <span className="form-check-sign" />Eu concordo com{" "}
                                                             <a
                                                                 href="#pablo"
-                                                                onClick={e => e.preventDefault()}
+                                                                onClick={e => {
+                                                                    e.preventDefault()
+                                                                    this.toggleModalLarge()
+                                                                }}
                                                             >
                                                                 termos e condições
                                                             </a>
@@ -298,6 +317,15 @@ class SectionRegister extends React.Component {
                         </div>
                     </div>
                 </div>
+
+                <Modal isOpen={this.state.modalLarge} toggle={this.toggleModalLarge} size="lg">
+                    <ModalHeader className="justify-content-center" toggle={this.toggleModalLarge}>
+                        Large modal
+                    </ModalHeader>
+                    <ModalBody>
+                        ...
+                    </ModalBody>
+                </Modal>
             </div>
         );
     }
