@@ -43,12 +43,25 @@ import {
 class SectionRegister extends React.Component {
     state = {
         squares1to6: "",
-        squares7and8: ""
+        squares7and8: "",
+
+        passwordSame: null,
+        usernameEmpty: null,
+        emailEmpty: null,
+        agreedError: "",
+
+        password: "",
+        repeatPassword: "",
+        email: "",
+        username: "",
+        agreedWithTerms: false,
     };
+
     componentDidMount() {
         document.body.classList.toggle("register-page");
         document.documentElement.addEventListener("mousemove", this.followCursor);
     }
+
     componentWillUnmount() {
         document.body.classList.toggle("register-page");
         document.documentElement.removeEventListener(
@@ -56,6 +69,7 @@ class SectionRegister extends React.Component {
             this.followCursor
         );
     }
+
     followCursor = event => {
         let posX = event.clientX - window.innerWidth / 2;
         let posY = event.clientY - window.innerWidth / 6;
@@ -74,6 +88,32 @@ class SectionRegister extends React.Component {
                 "deg)"
         });
     };
+
+    passwordCheck() {
+        this.setState({passwordSame: this.state.password === this.state.repeatPassword && this.state.password !== ""})
+    }
+
+    submit = () => {
+        const email = this.state.email;
+        const username = this.state.username;
+        const termsAgreed = this.state.agreedWithTerms;
+        const passwordSame = this.state.passwordSame;
+
+        this.setState({error: ""});
+
+        if(email === "" ||  username === "" || !passwordSame) {
+            this.setState({emailEmpty: email === "", usernameEmpty: username === "", passwordSame: false});
+            return
+        }
+
+        if(!termsAgreed) {
+            this.setState({error: "Tens de aceitar os termos e condições para te registares."})
+            return
+        }
+
+        //TODO call backend
+    };
+
     render() {
         return (
             <div id="register-section">
@@ -107,7 +147,9 @@ class SectionRegister extends React.Component {
                                                     <InputGroup
                                                         className={classnames({
                                                             "input-group-focus": this.state.fullNameFocus
-                                                        })}
+                                                        },
+                                                            {"has-danger": this.state.usernameEmpty === true}
+                                                            )}
                                                     >
                                                         <InputGroupAddon addonType="prepend">
                                                             <InputGroupText>
@@ -115,7 +157,7 @@ class SectionRegister extends React.Component {
                                                             </InputGroupText>
                                                         </InputGroupAddon>
                                                         <Input
-                                                            placeholder="Nome completo"
+                                                            placeholder="Username"
                                                             type="text"
                                                             onFocus={e =>
                                                                 this.setState({ fullNameFocus: true })
@@ -123,12 +165,14 @@ class SectionRegister extends React.Component {
                                                             onBlur={e =>
                                                                 this.setState({ fullNameFocus: false })
                                                             }
+                                                            onChange={e => this.setState({username: e.target.value, usernameEmpty: null})}
                                                         />
                                                     </InputGroup>
                                                     <InputGroup
                                                         className={classnames({
                                                             "input-group-focus": this.state.emailFocus
-                                                        })}
+                                                        },
+                                                            {"has-danger": this.state.emailEmpty === true})}
                                                     >
                                                         <InputGroupAddon addonType="prepend">
                                                             <InputGroupText>
@@ -140,12 +184,14 @@ class SectionRegister extends React.Component {
                                                             type="text"
                                                             onFocus={e => this.setState({ emailFocus: true })}
                                                             onBlur={e => this.setState({ emailFocus: false })}
+                                                            onChange={e => this.setState({email: e.target.value, emailEmpty: null})}
                                                         />
                                                     </InputGroup>
                                                     <InputGroup
                                                         className={classnames({
-                                                            "input-group-focus": this.state.passwordFocus
-                                                        })}
+                                                                "input-group-focus": this.state.passwordFocus
+                                                            },
+                                                            {"has-danger": this.state.passwordSame === false})}
                                                     >
                                                         <InputGroupAddon addonType="prepend">
                                                             <InputGroupText>
@@ -154,19 +200,25 @@ class SectionRegister extends React.Component {
                                                         </InputGroupAddon>
                                                         <Input
                                                             placeholder="Password"
-                                                            type="text"
+                                                            type="password"
                                                             onFocus={e =>
                                                                 this.setState({ passwordFocus: true })
                                                             }
                                                             onBlur={e =>
                                                                 this.setState({ passwordFocus: false })
                                                             }
+                                                            onChange={async e => {
+                                                                await this.setState({password: e.target.value});
+                                                                this.passwordCheck();
+
+                                                            }}
                                                         />
                                                     </InputGroup>
                                                     <InputGroup
                                                         className={classnames({
-                                                            "input-group-focus": this.state.passwordFocus
-                                                        })}
+                                                            "input-group-focus": this.state.repeatPasswordFocus
+                                                        },
+                                                            {"has-danger": this.state.passwordSame === false})}
                                                     >
                                                         <InputGroupAddon addonType="prepend">
                                                             <InputGroupText>
@@ -175,18 +227,25 @@ class SectionRegister extends React.Component {
                                                         </InputGroupAddon>
                                                         <Input
                                                             placeholder="Repetir password"
-                                                            type="text"
+                                                            type="password"
                                                             onFocus={e =>
-                                                                this.setState({ passwordFocus: true })
+                                                                this.setState({ repeatPasswordFocus: true })
                                                             }
                                                             onBlur={e =>
-                                                                this.setState({ passwordFocus: false })
+                                                                this.setState({ repeatPasswordFocus: false })
                                                             }
+                                                            onChange={async e => {
+                                                                await this.setState({repeatPassword: e.target.value});
+                                                                this.passwordCheck();
+                                                            }}
+
                                                         />
                                                     </InputGroup>
                                                     <FormGroup check className="text-left">
                                                         <Label check>
-                                                            <Input type="checkbox" />
+                                                            <Input type="checkbox"
+                                                                    onChange={e => this.setState({agreedWithTerms: e.target.checked})}
+                                                            />
                                                             <span className="form-check-sign" />Eu concordo com{" "}
                                                             <a
                                                                 href="#pablo"
@@ -195,12 +254,14 @@ class SectionRegister extends React.Component {
                                                                 termos e condições
                                                             </a>
                                                             .
+
+                                                            <p style={{color: "red"}}>{this.state.error}</p>
                                                         </Label>
                                                     </FormGroup>
                                                 </Form>
                                             </CardBody>
                                             <CardFooter style={{textAlign: "center"}}>
-                                                <Button className="btn-round" color="primary" size="lg">
+                                                <Button className="btn-round" color="primary" size="lg" onClick={this.submit}>
                                                     Registar
                                                 </Button>
                                             </CardFooter>
