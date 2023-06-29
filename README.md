@@ -1,34 +1,11 @@
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+# Old events
 
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="#">
-    <img src="./nei_isep.png" alt="NEI Logo">
-  </a>
+This repo exists only for archival and historical purposes. 
 
-  <h3 align="center">NEI-ISEP</h3>
+It contains the frontend code from the websites of previous NEI events dating back to **2018**.
 
-  <p align="center">
-    Students association thriving for the betterment of the ISEP Informatics community.
-    <br />
-  </p>
-</p>
+Feel free to look around!
 
-
-<!-- ABOUT THE PROJECT -->
-## The repo
-
-This repo holds some of the projects that were used for the events organized by NEI-ISEP.
-
-<!-- LICENSE -->
 ## License
 
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
